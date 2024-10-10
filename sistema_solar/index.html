@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> <!--intentando centrar las imágenes, he encontrado 
+    en https://www.w3schools.com/html/html_classes.asp 
+    como crear una clase para predeterminar la configuracion de las fotos en este caso -->
+    <style> 
+        .imagencentrada{width: 600px; height: auto;} 
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "author" content = "Sara Mulero Herrero">
@@ -29,8 +34,7 @@
         
      <!--imagen del Sistema Solar-->
     
-     <figure>
-        <img src="images/vialactea.jpg" alt="Vía Láctea" style="width: 600px; height: auto;"></figure>
+     <center><img src="images/vialactea.jpg" alt="Vía Láctea" class="imagencentrada"></center>
 
     <!--sección de tiempo de formación del Sistema Solar-->
     <h2>¿Cuándo se formó el Sistema Solar?</h2>
@@ -98,13 +102,9 @@
 
     <h3>Los planetas enanos</h3>
     
-    <figure>
-        <img src="images/enanos.jpg" alt="Planetas enanos" style="width: 600px; height: auto;">
-        <figcaption>Los planetas enanos del Sistema Solar.</figcaption>
-    </figure>
+    <img src="images/enanos.jpg" alt="Planetas enanos" class=".imagencentrada">
 
-        <!--sección de satélites-->
-
+    <!--sección de satélites-->
     <h3>Satélites</h3>
 
     <p>Se llama satélite a un cuerpo que gira alrededor de otro que suele ser más grande. 
@@ -119,9 +119,10 @@
 
     <!--imagen de la luna-->
 
-    <figure>
-        <img src="images/luna.jpg" alt="La Luna" style="width: 400px; height: auto;">
-        <figcaption>La Luna, satélite natural de la Tierra.</figcaption></figure>
+
+    <img src="images/luna.jpg" alt="La Luna" class=".imagencentrada">
+        
+    <p>La Luna, satélite natural de la Tierra.</p>
 
     <!--sección de otros elementos del sistema solar-->
     <h3>Y además...</h3>
