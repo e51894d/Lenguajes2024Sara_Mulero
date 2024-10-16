@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="es">
-    
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Sara Mulero Herrero">
-
-tabla1
-<style> 
-    table { 
+     table { 
         width: 100%;
         border-collapse: collapse;
     }
@@ -21,10 +11,10 @@ tabla1
         padding: 8px;
         text-align: left;
     }
-</style>
+
 
 tabla2
-<style> 
+ 
     table { 
         width: 100%;
         border-collapse: collapse;
@@ -38,10 +28,10 @@ tabla2
         padding: 8px;
         text-align: left;
     }
-</style>
+
 
 tabla3
-<style> 
+ 
     table { 
         width: 100%;
         border-collapse: collapse;
@@ -55,4 +45,3 @@ tabla3
         padding: 8px;
         text-align: left;
     }
-</style>
