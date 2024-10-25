@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Sara Mulero Herrero">
+    <title>Formulario de inscripción al sistema</title>
+</head>
+<body style="width: 600px; margin:auto; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: rgb(221, 215, 201);""></body>
+  <h1 style="margin-left: 20px;">FORMULARIO DE INSCRIPCIÓN</h1> 
+  <p style="color: rgb(196, 7, 7); margin-left: 490px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";>*Todos los campos son obligatorios</p> 
+
+  <form name="sistema" action="proceso.php" method="post" style="margin-left: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> <!-- Inicio del formulario; define su nombre, acción (donde se enviará) y método de envío -->
+      <b> 
+          <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo "Nombres" -->
+          <input type="text" name="nombre"> <!-- Campo de entrada para el nombre -->
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Apellidos:</label> 
+          <input type="text" name="apellidos">
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Empresa/institución:</label> 
+          <input type="text" name="empresa"> 
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="empresa">Ámbito de la empresa:</label> <!-- Etiqueta para el campo "Ámbito de la empresa" -->
+          <select id="empres" name="empresa"> <!-- Menú desplegable para seleccionar el ámbito de la empresa -->
+              <option value="educación">Educación</option> 
+              <option value="tecnología">Tecnología</option> 
+              <option value="logística">Logística</option> 
+              <option value="contabilidad">Contabilidad</option> 
+              <option value="marketing">Marketing</option> 
+          </select> 
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Cargo:</label> 
+          <input type="text" name="cargo"> 
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Nombre de Usuario:</label> 
+          <input type="text" name="nombre de usuario">  
+      </b> (Nombre con el que se identificará dentro del sistema) 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Contraseña:</label> 
+          <input type="text" name="contraseña"> 
+      </b> (Utilice combinaciones alfanuméricas) 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Repita la contraseña:</label> 
+          <input type="text" name="repita contraseña"> 
+      </b> 
+      <br> 
+      <br> 
+      
+      <b> 
+          <label for="nombre">Correo electrónico:</label> 
+          <input type="text" name="correo electrónico"> 
+      </b> 
+      <br> 
+      <br> 
+      
+      <input type="checkbox" id="términos" name="términos" value="términos" style="margin-left: 50px;"> <!-- Casilla de verificación para aceptar los términos -->
+      <label for="términos" style="font-size: small;"> He leído y acepto los términos del sistema</label> <!-- Etiqueta para la casilla de verificación -->
+      <br> 
+      <br> 
+      
+      <input type="submit" value="Enviar Formulario" style="margin-left: 100px ;"> <!-- Botón para enviar el formulario-->
+</body>
+</html>
