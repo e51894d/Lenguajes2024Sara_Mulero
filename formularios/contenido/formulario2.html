@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Sara Mulero Herrero">
+    <meta name="author" content="Sara Mulero Herrero">
     <title>Formulario de contacto</title>
-
-
+    <link rel="stylesheet" href="formstyle_2.css">
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;"> <!-- Estilo del cuerpo de la página -->
 
-    <div style="background-color: rgb(207, 204, 187); padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 400px; width: 100%;"> <!-- Contenedor del formulario -->
-        <h1 style="color: #7f8105; text-align: center; font-size: 24px;">Formulario de contacto</h1> 
-        <p style="text-align: center; font-size: 14px; color: #555;">Escríbenos y en breve los pondremos en contacto contigo</p> 
+<body>
+    <div>
+        <h1>Formulario de contacto</h1> 
+        <p>Escríbenos y en breve los pondremos en contacto contigo</p> 
     
-        <form name ="sistema" action="proceso.php" method="post"> <!-- Inicio del formulario, define el método de envío -->
-            <label for="nombre" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Nombre y apellidos <span style="color: red;">*</span></label> <!-- Etiqueta para el nombre-->
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;">
+        <form name="sistema" action="proceso.php" method="post">
+            <label for="nombre">Nombre y apellidos <span>*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
     
-            <label for="email" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Email <span style="color: red;">*</span></label> <!--Etiqueta email-->
-            <input type="email" id="email" name="email" placeholder="Escribe tu Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;"> 
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
     
-            <label for="telefono" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Teléfono</label> <!--Etiqueta para el teléfono-->
-            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;"> 
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
     
-            <label for="sitio_web" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Sitio web</label> <!--Etiqueta para campo del la web-->
-            <input type="url" id="sitio_web" name="sitio_web" placeholder="Escribe la URL de tu web" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;"> 
+            <label for="sitio_web">Sitio web</label>
+            <input type="url" id="sitio_web" name="sitio_web" placeholder="Escribe la URL de tu web">
     
-            <label for="asunto" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Asunto <span style="color: red;">*</span></label> <!--Etiqueta para campo del asunto-->
-            <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 
-            5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;"> 
+            <label for="asunto">Asunto <span>*</span></label>
+            <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
     
-            <label for="mensaje" style="display: block; margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-weight: bold; color: #333;">Mensaje <span style="color: red;">*</span></label> <!-- Etiqueta para campo del mensaje-->
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¡Déjanos tu comentario!" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 5px solid #7f8105; border-radius: 5px; font-size: 14px; box-sizing: border-box;"></textarea> 
+            <label for="mensaje">Mensaje <span>*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¡Déjanos tu comentario!" required></textarea>
     
-            <input type="submit" value="ENVIAR" style="background-color: #cfa004; color: white; border: none; cursor: pointer; font-size: 16px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;padding: 10px; width: 100%; margin-top: 10px;"> <!--Botón para enviar-->
+            <input type="submit" value="ENVIAR">
     
-            <small style="display: block; margin-top: 10px; color: #555; font-size: 12px; text-align: center;">* los campos son obligatorios.</small> 
+            <small>* los campos son obligatorios.</small>
         </form>
     </div>
-    
-    </body>
+</body>
 </html>
