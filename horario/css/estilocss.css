@@ -1,27 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
 
-    table, 
-    td,
-    th {
-        border: 1px solid #000000;
-        border-collapse: collapse;
-        text-align: center;
-    }
+body {
 
-    td,
-    th {
-        padding: 3px;
-        width: 200px;
-        height: 25px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Aleo',
+    
+}
 
-    th {
-        background: #f0e6cc;
-    }
+table{
+    border-radius: 0px; /* Ajusta el valor según para redondear, pero no lo quiero redondo, lo quiero separado */
+    overflow: hidden; /* para que las esquinas internas no sobresalgan */
+}
 
-    .even {
-        background: #fbf8f0;
-    }
+td,
+th {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Aleo'
+}
 
-    .odd {
-        background: #fefcf9;
-    }
+td,
+th {
+    padding: 3px;
+    width: 200px;
+    height: 25px;
+}
+
+th {
+    background: #f0e6cc;
+}
+
+.even {
+    background: #fbf8f0;
+}
+
+.odd {
+    background: #fefcf9;
+}
+
+/* Colores de asignaturas */
+.lenguajes {
+    background-color: rgb(238, 208, 236);
+}
+
+.sistemas {
+    background-color: rgb(238, 208, 236);
+}
+
+.ipe {
+    background-color: rgb(101, 94, 194);
+}
+
+.bd {
+    background-color: rgb(2, 167, 57);
+}
+
+.programacion {
+    background-color: rgb(255, 217, 0);
+}
+
+.entornos {
+    background-color: rgb(255, 217, 0);
+}
+
+.sostenibilidad {
+    background-color: rgb(7, 112, 138);
+}
+
+.digitalizacion {
+    background-color: rgb(7, 112, 138);
+}

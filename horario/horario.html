@@ -2,107 +2,76 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sara Mulero Herrero">
-
-<style>
-        table, 
-        td,
-        th {
-            border: 1px solid #000000;
-            border-collapse: collapse;
-            text-align: center;
-        }
-
-        td,
-        th {
-            padding: 3px;
-            width: 200px;
-            height: 25px;
-        }
-
-        th {
-            background: #f0e6cc;
-        }
-
-        .even {
-            background: #fbf8f0;
-        }
-
-        .odd {
-            background: #fefcf9;
-        }
-</style>
-
+    <link rel="stylesheet" href="/Lenguajes2024Sara_Mulero/horario/css/estilocss.css">
 </head>
 
-<table>
-
-    <tr>
-        <td></td>
-        <td>Lunes</td>
-        <td>Martes</td>
-        <td>Miércoles</td>
-        <td>Jueves</td>
-        <td>Viernes</td>
-    </tr>
-    <!--nota mental2: colspan, para que una celda se integre con columnas; 
-	rowspan* para que la celda se integre con fila, https://www.w3schools.com/html/html_table_colspan_rowspan.asp-->
-    <tr> <!--nota: he tenido que ir poniendo los dias conforme iba probando 
-        para guiarme entre dias y horas, me ha sido util-->
-        <td>15:30</td>
-        <td rowspan="2" style="background-color: rgb(238, 208, 236);">Lenguajes</td> <!--lunes-->
-        <td rowspan="2" style="background-color: rgb(238, 208, 236);">Sistemas</td> <!--martes-->
-        <td rowspan="2" style="background-color: rgb(101, 94, 194);">IPE</td> <!--miercoles-->
-        <td rowspan="4" style="background-color: rgb(101, 94, 194);">IPE</td> <!--jueves-->
-        <td rowspan="4" style="background-color: rgb(238, 208, 236);">Lenguajes</td> <!--viernes-->
-    </tr>
-    <tr>
-        <td>16:00</td>
-    </tr>
-    <tr>
-        <td>16:30</td>
-        <td rowspan="2" style="background-color: rgb(238, 208, 236);">Sistemas</td> <!--lunes-->
-        <td rowspan="6" style="background-color: rgb(2, 167, 57);">Bases de datos</td> <!--martes-->
-        <td rowspan="6" style="background-color: rgb(255, 217, 0);">Programación</td> <!--miercoles, este ha costado porque se me desconfiguraba todo el rato-->
-    </tr>
-    <tr>
-        <td>17:00</td>
-    </tr>
-    <tr>
-        <td>17:30</td>
-        <td rowspan="4" style="background-color: rgb(255, 217, 0);">Entornos</td> <!--lunes-->
-        <td rowspan="2" style="background-color: rgb(255, 217, 0);">Entornos</td> <!--jueves-->
-        <td rowspan="2" style="background-color: rgb(238, 208, 236);">Sistemas</td> <!--viernes-->
-    </tr>
-    <tr>
-        <td>18:00</td>
-    </tr>
-    <tr>
-        <td>18:30</td>
-        <td rowspan="6" style="background-color: rgb(2, 167, 57);">Bases de datos</td> <!--jueves-->
-        <td rowspan="6" style="background-color: rgb(255, 217, 0);">Programación</td> <!--bases jueves-->
-    </tr>
-    <tr>
-        <td>19:00</td>
-    </tr>
-    <tr>
-        <td>19:30</td>
-        <td rowspan="2" style="background-color: rgb(7, 112, 138);">Sostenibilidad</td> <!--lunes-->
-        <td rowspan="4" style="background-color: rgb(255, 217, 0);">Programación</td> <!--lunes-->
-        <td rowspan="4" style="background-color: rgb(238, 208, 236);">Sistemas</td> <!--miercoles-->
-    </tr>
-    <tr>
-        <td>20:00</td>
-    </tr>
-    <tr>
-        <td>20:30</td>
-        <td rowspan="2" style="background-color: rgb(7, 112, 138);">Digitalización</td> <!--lunes-->
-    </tr>
-    <tr>
-        <td>21:00</td>
-    </tr>
-
-</table>
+<body>
+    <div class="center"></div>
+    <table>
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>15:30</td>
+            <td rowspan="2" class="lenguajes">Lenguajes</td>
+            <td rowspan="2" class="sistemas">Sistemas</td>
+            <td rowspan="2" class="ipe">IPE</td>
+            <td rowspan="4" class="ipe">IPE</td>
+            <td rowspan="4" class="lenguajes">Lenguajes</td>
+        </tr>
+        <tr>
+            <td>16:00</td>
+        </tr>
+        <tr>
+            <td>16:30</td>
+            <td rowspan="2" class="sistemas">Sistemas</td>
+            <td rowspan="6" class="bd">Bases de datos</td>
+            <td rowspan="6" class="programacion">Programación</td>
+        </tr>
+        <tr>
+            <td>17:00</td>
+        </tr>
+        <tr>
+            <td>17:30</td>
+            <td rowspan="4" class="entornos">Entornos</td>
+            <td rowspan="2" class="entornos">Entornos</td>
+            <td rowspan="2" class="sistemas">Sistemas</td>
+        </tr>
+        <tr>
+            <td>18:00</td>
+        </tr>
+        <tr>
+            <td>18:30</td>
+            <td rowspan="6" class="bd">Bases de datos</td>
+            <td rowspan="6" class="programacion">Programación</td>
+        </tr>
+        <tr>
+            <td>19:00</td>
+        </tr>
+        <tr>
+            <td>19:30</td>
+            <td rowspan="2" class="sostenibilidad">Sostenibilidad</td>
+            <td rowspan="4" class="programacion">Programación</td>
+            <td rowspan="4" class="sistemas">Sistemas</td>
+        </tr>
+        <tr>
+            <td>20:00</td>
+        </tr>
+        <tr>
+            <td>20:30</td>
+            <td rowspan="2" class="digitalizacion">Digitalización</td>
+        </tr>
+        <tr>
+            <td>21:00</td>
+        </tr>
+    </table>
+</body>
+</html>
