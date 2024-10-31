@@ -1,0 +1,10 @@
+body {
+    width: 600px;
+    margin: auto;
+}
+
+.imagencentrada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

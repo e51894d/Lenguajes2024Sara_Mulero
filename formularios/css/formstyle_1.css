@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 body {
   display: flex;
   justify-content: center;
@@ -9,7 +11,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family:'Merriweather'; color: #f0eae0
+  font-family:'Merriweather'; color: #493611
 }
 
 .recuadro {
@@ -41,7 +43,7 @@ label[for="términos"] {
   font-size: small;
 }
 
-input[type="submit"] {
+input[type="button"] {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
@@ -54,7 +56,7 @@ input[type="submit"] {
   font-family: 'Merriweather';
 }
 
-input[type="submit"]:hover { /*para cuando pinchemos o pasemos el cursor cambie de color, es un detallito, no me ha dejado poner comentarios con*/ 
+input[type="button"]:hover { /*para cuando pinchemos o pasemos el cursor cambie de color, es un detallito, no me ha dejado poner comentarios con*/ 
   background-color: #686b06; 
   font-family: 'Merriweather';
 }
