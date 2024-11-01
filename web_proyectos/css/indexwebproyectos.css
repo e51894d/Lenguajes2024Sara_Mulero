@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Robot Montserrat";
+    font-family: "Montserrat";
     font-size:larger;
     background-image: url("https://wallpapers.com/images/hd/4k-firewatch-river-stream-vnjdrwvxeo4f66qt.jpg");
     background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
@@ -58,7 +58,6 @@ body {
 
 h1, h2 {
     color: black;
-    font-family: "Montserrat";
 }
 
 h2 {
@@ -67,9 +66,17 @@ h2 {
     margin: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(53, 53, 53);
+}
+
 p {
     color: black;
-    font-family: "Montserrat";
     font-size: 16px;
     font-weight: 500; 
     text-align: justify;
@@ -81,7 +88,6 @@ ul {
 
 li {
     text-align: left;
-    font-family: "Montserrat";
     font-size: 16px;
     font-weight: 500;
 }
@@ -95,7 +101,6 @@ li::marker {
     line-height: 40px;
     width: 92%;
     font-size: 16px;
-    font-family: "Montserrat";
     font-weight: 600;
     color: rgb(220, 211, 211);
     background-color: var(--button_color);
@@ -107,4 +112,5 @@ li::marker {
 
 .button:hover {
     background-color: var(--button_color_hover);
+    color: white;
 }

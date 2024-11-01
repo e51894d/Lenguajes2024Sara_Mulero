@@ -1,16 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --background:  #333;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat";
+    font-size:larger;
+    background-image: url("https://m.media-amazon.com/images/I/91x1kY93ytL._AC_UF1000,1000_QL80_.jpg");
+    background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 header, footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background);
+    color: white;
     padding: 20px;
     text-align: center;
-    border-radius: 8px; 
+    vertical-align: middle;
+}
+
+.footerText {
+    padding: 40px;
+    color: white;
+}
 
 nav ul {
     list-style: none;
@@ -27,33 +48,41 @@ nav ul li a {
     text-decoration: none;
 }
 
+a:hover {
+    color: grey;
+}
+
 main {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 section {
-    background: #fff;
-    margin: 20px 0;
-    padding: 15px;
+    background: #a5a5a5;
+    margin-bottom: 80px;
     border-radius: 8px; /*redondeadas*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
-h2 {
+h2, p {
     color: #333;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 article {
-    margin-bottom: 15px;
     border-radius: 8px; 
     padding: 10px; /*espaciado interno*/
     background-color: #f9f9f9; /*fondo para los artículos*/
+    align-items: left;
 }
 
-video, audio {
-    display: block;
-    margin: 10px auto;
-    border-radius: 8px; 
+.spaceBottom {
+    margin-bottom: 15px;
 }
+
