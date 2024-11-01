@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --button_color: rgb(38, 39, 109);
+    --button_color_hover: rgb(38, 39, 109, 0.85);
+    --bullet_color: rgb(34, 38, 148);
+}
+
+body {
+    font-family: "Robot Montserrat";
+    font-size:larger;
+    background-image: url("https://wallpapers.com/images/hd/4k-firewatch-river-stream-vnjdrwvxeo4f66qt.jpg");
+    background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    text-align: left;
+    max-width: 800px;
+}
+
+.section{
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+h1, h2 {
+    color: black;
+    font-family: "Montserrat";
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 500; 
+    text-align: left;
+}
+
+ul {
+    display: inline-flexbox;
+    text-align: left;
+}
+
+li {
+    text-align: left;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+li::marker {
+    color: var(--bullet_color);
+}
+
+.button {
+    display: inline-block;
+    line-height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: rgb(220, 211, 211);
+    background-color: var(--button_color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: center;
+}
+
+.button:hover {
+    background-color: var(--button_color_hover);
+}

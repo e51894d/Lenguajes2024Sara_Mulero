@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    max-width: 1200px;
 }
 
 .container {
@@ -28,7 +29,7 @@ body {
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     color: #e2dcd3;
     font-family: "Merriweather", Arial, sans-serif;
     margin-left: 200px;

@@ -4,7 +4,7 @@ body {
     font-family: "Merriweather", Arial, sans-serif;
     font-size:larger;
     background-color: #c6bcbc;
-    background-image: url("/Lenguajes2024Sara_Mulero/formularios/css/nouage.jpg"); /* Ajusta la ruta aquí */
+    background-image: url("/Lenguajes2024Sara_Mulero/formularios/css/imagen/nouage.jpg"); /* Ajusta la ruta aquí */
     background-size: cover; /*para imagen cubra todo el fondo*/
     background-position: center; /*entrar la imagen */
     margin: 0;
