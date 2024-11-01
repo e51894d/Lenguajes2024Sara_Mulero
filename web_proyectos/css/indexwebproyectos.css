@@ -14,7 +14,7 @@ body {
     background-blend-mode: lighten;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*esto he tenido que meterlo porque si no la imagen se repetía hacia abajo*/
     background-attachment: fixed;
     margin: 0;
     display: flex;
