@@ -21,16 +21,39 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .content {
-    text-align: left;
+    text-align: jus;
     max-width: 800px;
 }
 
-.section{
-    margin-bottom: 100px;
+.card{
+    background-color: rgba(234, 231, 231, 0.6);
     text-align: left;
+    padding: 10px;
+    margin-inline: 10px;
+    border-radius: 8px;
+    height: 180px;
+    align-content: start;
+    position: relative;
+}
+
+.cardBottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+.column {
+    float: left;
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -40,17 +63,19 @@ h1, h2 {
 
 h2 {
     text-align: left;
+    font-size: 24px;
+    margin: 0;
 }
 
 p {
     color: black;
     font-family: "Montserrat";
+    font-size: 16px;
     font-weight: 500; 
-    text-align: left;
+    text-align: justify;
 }
 
 ul {
-    display: inline-flexbox;
     text-align: left;
 }
 
@@ -68,7 +93,7 @@ li::marker {
 .button {
     display: inline-block;
     line-height: 40px;
-    width: 200px;
+    width: 92%;
     font-size: 16px;
     font-family: "Montserrat";
     font-weight: 600;
@@ -78,7 +103,6 @@ li::marker {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    vertical-align: center;
 }
 
 .button:hover {
