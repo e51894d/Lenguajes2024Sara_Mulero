@@ -14,6 +14,7 @@ body {
 .imagencentrada {
     width: 600px;
     height: auto;
+    /*margin-right: 500px || No sé cómo centrarla, ni por qué no se centra igual que las otras*/
 }
 
 .content-wrapper {
@@ -37,5 +38,5 @@ body {
 .custom-list-1 {
     font-weight: normal;
     text-decoration: none;
-    color: #0000ff;
+    color: #1f1f57;
 }
