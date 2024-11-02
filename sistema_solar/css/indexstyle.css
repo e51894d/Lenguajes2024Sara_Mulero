@@ -3,6 +3,20 @@ body {
     width: 600px;
     margin: auto;
     font-family: 'Aleo';
+    background-image: url('https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: rgb(40, 40, 40);
 }
 
 .imagencentrada {
@@ -25,11 +39,10 @@ body {
 }
 
 .custom-list-1 li {
-    font-weight: bold;
+    font-weight: 400;
 }
 
-.custom-list-1 a {
-    font-weight: normal;
-    text-decoration: none;
+.custom-list-1 {
+    font-weight: 400;
     color: #0000ff;
 }

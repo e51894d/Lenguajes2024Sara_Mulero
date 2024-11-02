@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
+body {
+    width: 600px;
+    margin: auto;
+    font-family: 'Aleo';
+    background-image: url('https://wallpapercat.com/w/full/4/0/8/28235-3840x2160-desktop-4k-venus-wallpaper-photo.jpg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagencentrada {
+    width: 600px;
+    height: auto;
+}
+
+.content-wrapper {
+
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.8); /*transparencia para poder ver decente el texto con un fondo*/
+    border-radius: 15px; /*redondeando esquinas*/
+    padding: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /*efecto sombra*/
+    margin: auto;
+}
+.custom-list-1 {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list-1 li {
+    font-weight: bold;
+}
+
+.custom-list-1 a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #0000ff;
+}

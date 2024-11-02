@@ -3,6 +3,12 @@ body {
     width: 600px;
     margin: auto;
     font-family: 'Aleo';
+    background-image: url('https://images2.alphacoders.com/135/1353370.jpeg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagencentrada {

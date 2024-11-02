@@ -3,6 +3,12 @@ body {
     width: 600px;
     margin: auto;
     font-family: 'Aleo';
+    background-image: url('https://i.pinimg.com/originals/21/08/6d/21086dbd5783d15f4b4d255ae5bba4b7.jpg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagencentrada {

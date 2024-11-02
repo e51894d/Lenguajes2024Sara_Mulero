@@ -4,6 +4,12 @@ body {
     width: 600px;
     margin: auto;
     font-family: 'Aleo';
+    background-image: url('https://wallpapers.com/images/hd/nasa-image-of-jupiter-ur6rikbsqr7uw8q2.jpg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagencentrada {

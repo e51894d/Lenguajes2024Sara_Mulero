@@ -3,6 +3,12 @@ body {
     width: 600px;
     margin: auto;
     font-family: 'Aleo';
+    background-image: url('https://images8.alphacoders.com/135/1352165.jpeg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagencentrada {
@@ -28,7 +34,7 @@ body {
     font-weight: bold;
 }
 
-.custom-list-1 a {
+.custom-list-1 {
     font-weight: normal;
     text-decoration: none;
     color: #0000ff;
