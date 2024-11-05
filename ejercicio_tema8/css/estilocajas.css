@@ -17,7 +17,7 @@
     margin: auto;
     
 }
-.caja1 .texto1{
+.caja1 {
    background-color: antiquewhite;
    border-color: #070707;
    border-width: 5px;
@@ -28,7 +28,7 @@
    
 }
 
-.caja2 .texto2 {
+.caja2 {
     background-color: #f8cb05;
     border-color: #000000;
     border-left: #000000;
@@ -37,9 +37,9 @@
     border-top-right-radius: 10%; 
     border-bottom-right-radius: 10%;
     border-left-width: 70px;
-    padding-top: 10%;
-    padding-left: 10%;
-    color: #4400ff;
+    padding-top: 0%;
+    padding-left: 0%;
+    color: #000000;
     
 }
 
@@ -74,8 +74,11 @@
     width: 300px;
     height: 300px; 
     border-style:dashed;
+    border-width: 7px;
     border-color: #f8cb05;
     border-radius: 200px;
+    text-align: center;
+    color: #ffffff;
 
 }
 
@@ -97,6 +100,7 @@
     border-style: solid;
     border-color: #ff0000;
     border-bottom-width: 20px;
+    text-align: center;
 
 }
 
@@ -109,9 +113,9 @@
     border-right-color: #006d18;
     border-top-color: rgb(247, 222, 5) ;
     border-width: 30px;
-    padding-top: 10%;
-    padding-left: 10%;
-
+    padding-top: 0%;
+    padding-left: 0%;
+    text-align: left;
 }
 
 .caja9 {
@@ -123,5 +127,6 @@
     border-color: #8541f3;
     padding-top: 10%;
     padding-left: 10%;
-
+    text-align: center;
+    
 }
