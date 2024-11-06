@@ -9,6 +9,7 @@
 
 }*/
 
+
 .caja{
 
     width: 400px;
@@ -17,18 +18,30 @@
     margin: auto;
     
 }
-.caja1 {
+
+.caja1>.p {
+
    background-color: antiquewhite;
    border-color: #070707;
    border-width: 5px;
-   padding-top: 10%;
-   padding-left: 10%;
+   padding-top: 5%;
+   padding-left: 5%;
    border-style: dotted;
    margin: auto;
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   color:#00008B
    
+   p {
+    text-align: left;
+    color: #00008B;
+    padding-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 
 .caja2 {
+   
     background-color: #f8cb05;
     border-color: #000000;
     border-left: #000000;
@@ -40,13 +53,9 @@
     padding-top: 0%;
     padding-left: 0%;
     color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-   
-}
 
-.caja2 .texto2 {
-
-    
 }
 
     
@@ -57,8 +66,10 @@
     border-color: #d1866db4;
     border-radius: 5%;
     border-width: 20px;
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 0%;
+    padding-left: 53%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #00008B;
 
 }
 
@@ -67,10 +78,13 @@
     background-color: #A0D5A0;
     border-style:inset; 
     border-color:#006d18;
-    border-radius: 5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
     border-width: 20px;
-    padding-top: 10%;
+    padding-top: 0%;
     padding-left: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 
 }
 
