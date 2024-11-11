@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+.tablero {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.casilla {
+    width: 100%;
+    height: 100%;
+}
+
+.blanca {
+    background-color: rgb(255, 255, 255);
+}
+
+.negra {
+    background-color: rgb(35, 34, 36);
+}
