@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*obligatorio*/
+    width: 1200px; /*ancho máximo*/
+    margin: auto; /*centrar contenido*/
+
+}
+
+h1 {
+    text-align: center;
+    font-family: "Merriweather";
+    font-size: 24px;
+}
+
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
+}
+
+
+table {
+    width: 100%; 
+}
+
+td {
+    width: 500px; 
+    height: 300px;   
+}
+
+.caja1 {
+   
+    background-color: antiquewhite;
+   border-color: #070707;
+   border-width: 5px;
+   padding-top: 5%;
+   padding-left: 5%;
+   border-style: dotted;
+   margin: auto;
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   color:#00008B
+}
+
+.caja2 {
+    background-color: #ffd700;
+    border: 5px solid black;
+    border-left: 80px solid black;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.caja3 {
+    background-color: #f28b82;
+    border: 40px groove #ff6658;
+    border-radius: 40px;
+}
+
+.caja4 {
+    background-color: #a0d995;
+    border: 35px inset #006400;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.caja5 {
+    background-color: peachpuff;
+    border: 10px dashed orange;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 200px;
+    width: 200px;
+}
+
+.interrogante {
+    color: darkblue; 
+    text-align: center;
+    font-size: 100px; 
+    font-weight: bold; 
+}
+
+.caja6 {
+    background-color: #d1c4e9;
+    border: 35px outset darkblue;
+}
+
+.caja7 {
+    background: linear-gradient(to top, yellow, red);
+    border: 10px solid rgb(255, 0, 0);
+}
+
+.caja8 {
+    background-color: white;
+    border: 35px solid;
+    border-color: blue red green yellow;
+}
+
+.caja9 {
+    background-color: white;
+    border: 30px double purple;
+    border-radius: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-family: "Merriweather";
+    font-size: 16px;
+    color: rgb(220, 211, 211);
+    background-color: rgb(135, 67, 86);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(113, 33, 58);
+}
