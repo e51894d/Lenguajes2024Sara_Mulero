@@ -80,7 +80,24 @@ article {
     border-radius: 8px; 
     padding: 10px; /*espaciado interno*/
     background-color: #f9f9f9; /*fondo para los artículos*/
-    align-items: left;
+    align-items:center;
+}
+
+.centrar-imagen {
+    display: block;
+    margin: 0 auto;
+}
+.icono-esquina {
+    position: absolute;
+    top: 10px;   
+    right: 10px; 
+}
+
+.icono-esquina img {
+    margin-top: 30px;
+    margin-right: 100px;
+    width: 100px;  /*ajusta el tamaño del icono*/
+    height: auto;
 }
 
 .spaceBottom {
