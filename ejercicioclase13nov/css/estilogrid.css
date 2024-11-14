@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0f0f0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.grid-item {
+    background-color: #87CEFA;
+    color: #333;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center; 
+}
+
+/*tamaños de bloques*/
+.mitades {
+    grid-column: span 6;
+}
+
+.tercio {
+    grid-column: span 4;
+}
+
+.cuarto {
+    grid-column: span 3;
+}
+
+.sexto {
+    grid-column: span 2;
+}
+
+.sexto2 {
+    grid-column: span 4;
+}
+
+.cuarto-bajo {
+    grid-column: span 3;
+}
+
+.espacio {
+    grid-column: span 2;
+    
+}

@@ -8,7 +8,7 @@ html {
 body {
     font-family: "Merriweather", Arial, sans-serif;
     font-size:larger;
-    background-image: url("/Lenguajes2024Sara_Mulero/miniweb/css/mountains.jpg"); /* Ajusta la ruta aquí */
+    background-image: url("./images/mountains.jpg"); /* Ajusta la ruta aquí */
     background-size: cover; /*para imagen cubra todo el fondo*/
     background-position: center; /*entrar la imagen */
     margin: 0;
