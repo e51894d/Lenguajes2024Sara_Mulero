@@ -3,7 +3,9 @@ body {
     background-color: #aaa08f;
 }
 
-
+.h1 {
+    font-family: "Aboreto";
+}
 
 .contenedor {
     border: 49px solid #463721;
