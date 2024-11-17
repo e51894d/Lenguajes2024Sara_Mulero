@@ -1,0 +1,104 @@
+body { 
+    margin: 40px;
+    background-color: #aaa08f;
+}
+
+.h1 {
+    font-family: "Aboreto";
+    text-align: center;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media (min-width: 640px) {
+    .contenedor-body {
+        width: 25%;
+        background-color: orange;
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media (min-width: 768px) {
+    .contenedor-body {
+        width: 50%;
+        background-color: green;
+    }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media (min-width: 1024px) {
+    .contenedor-body {
+        width: 75%;
+        background-color: blue;
+    }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media (min-width: 1280px) {
+    .contenedor-body {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+.contenedor {
+    border: 8% solid #463721; /* Escala proporcionalmente al contenedor */
+    text-align: center;
+    width: 60%; /* Ahora basado en un porcentaje del contenedor padre */
+    aspect-ratio: 1 / 1; /* Relación de aspecto cuadrada */
+    margin: auto;
+}
+  
+.contenedor-interno {
+    background-color: #aaa08f;
+    align-items: stretch;
+}
+  
+.celda {
+    background-color: #b3894e;
+    height: 12.5%; /* Proporción basada en el contenedor padre */
+    width: 12.5%; /* Proporción basada en el contenedor padre */
+    max-height: 100%; /* Máximo relativo al contenedor */
+    max-width: 100%; /* Máximo relativo al contenedor */
+    float: left;
+    padding: 0;
+    margin: auto;
+}
+  
+.celda-interna {
+    text-align: center;
+    align-self: center;
+}
+  
+.superior, 
+.inferior {
+    align-items: stretch;
+    background-color: #b1a189;
+    font-family: "Aboreto";
+}
+  
+.superior {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+  
+.inferior {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 10;
+}
+  
+/* Aplica estilos a las celdas resaltadas */
+.celda-resaltada {
+    background-color: #442803;
+    color: #fff;
+    height: 12.5%;
+    width: 12.5%;
+    max-height: 100%; /* Relativo al contenedor */
+    max-width: 100%; /* Relativo al contenedor */
+    float: left;
+    padding: 0;
+    margin: auto;
+}
