@@ -1,6 +1,6 @@
 body {
-    font-family: 
-    text-align: center;
+
+    background-color: #9e9283;
 
 }
 
@@ -8,12 +8,19 @@ body {
    
     width: 600px;
     height: 600px;
-    border: 1px solid black;
+    border: 10px solid #504b44;
+    border-radius: 5px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
+}
+
+.h1 {
+
+    font-family: "Aboreto";
+    text-align: center;
 }
 
 .casilla {
@@ -24,7 +31,7 @@ body {
 
 .blanca {
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(238, 228, 228);
 }
 
 .negra {

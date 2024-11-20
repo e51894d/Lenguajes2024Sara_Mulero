@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #beb9b0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: "Aboreto";
+}
+  
+
+.tableroajedrez {
+   
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 600px; /* Ajustamos el tamaño del tablero */
+    height: 600px; /* Mantener cuadrado */
+    border: 2px solid #000;
+}
+
+.tableroajedrez td {
+    width: 50px; 
+    height: 50px;
+}
+
+.tableroajedrez tr:nth-child(odd) td:nth-child(odd),
+.tableroajedrez tr:nth-child(even) td:nth-child(even) {
+    background-color: #000; /* Cuadros negros */
+}
+
+.tableroajedrez tr:nth-child(odd) td:nth-child(even),
+.tableroajedrez tr:nth-child(even) td:nth-child(odd) {
+    background-color: #fff; /* Cuadros blancos */
+}
