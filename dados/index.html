@@ -13,7 +13,7 @@
         body {
             margin: 0;
             font-family: 'Courier New', Courier, monospace;
-            display: flex;
+            display: flex; /*contenedor principal*/
             justify-content: center;
             align-items: center;
             background-color: #f0f0f0;
@@ -74,7 +74,7 @@
             box-shadow: 5px 2px 2px rgb(117, 116, 116);
             
            
-        }
+        }/*redondear BORDE POR DENTRO: preguntar en clase*/
 
         .arriba-izquierda {
             margin-top: 20px;
@@ -131,13 +131,15 @@
 </head>
 
 <body>
-  <div class="contenedor"> <!--contenedor con más contenedores dentro -->
+  
+    <div class="contenedor"> <!--contenedor con más contenedores dentro-->
     
     <header class="header">Dado</header>
 
     <main class="tablero">
      
       <div class="dado dado-1"><span class="punto centro"></span></div>
+      
       <div class="dado dado-2">
 
         <span class="punto arriba-izquierda"></span>
@@ -183,38 +185,12 @@
 
       </div>
     </main>
+
     <footer class="footer">Sara Mulero Herrero</footer>
   </div>
+
 </body>
 </html>
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
