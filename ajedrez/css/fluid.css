@@ -1,61 +1,72 @@
 body { 
-    margin: 40px;
+    margin: 5%;
     background-color: #aaa08f;
+    font-size: 16px; /*esto es para mantener la escalabilidad*/
 }
-
+/*para usar fluid tengo que ajustar las medidas con unidades relativas, em, rem o vw y vh, */
 .h1 {
     font-family: "Aboreto";
     text-align: center;
+    font-size: 1.5rem; /*escalable*/
 }
 
 .contenedor {
-    border: 7% solid #463721; /* Escala proporcional al contenedor */
-    border-radius: 20px; /* Bordes redondeados */
-    width: 80%; /* Ancho fluido relativo al viewport */
-    max-width: 560px; /* Ancho máximo para pantallas grandes */
-    aspect-ratio: 1 / 1; /* Relación cuadrada para mantener proporción */
-    margin: 0 auto; /* Centrado horizontal */
-    overflow: hidden; /* Solución para flotaciones */
-    position: relative;
+    border: 4vw solid #463721;
+    border-radius: 2vw;
+    width: 90%; /*el tablero ocupa el 90% del ancho disponible*/
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 1fr); /*columnas equitativas*/
+    grid-template-rows: auto repeat(8, 1fr) auto; /*filas automaticas, celdas no*/
+    grid-auto-flow: row;
 }
 
 .contenedor-interno {
     background-color: #aaa08f;
-    overflow: hidden; /* Soluciona flotaciones internas */
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    align-items: stretch;
 }
 
 .celda {
-    float: left; /* Posiciona las celdas en fila */
-    width: 12.5%; /* Cada celda ocupa 1/8 del ancho del contenedor */
-    padding: 5%; /* Espaciado proporcional */
+    font-size: 1.2rem; /*escalable*/
     background-color: #b3894e;
-    font-size: 1.5em; /* Ajustable según el diseño */
     color: #000;
     text-align: center;
-    box-sizing: border-box; /* Incluye padding dentro del ancho total */
+    aspect-ratio: 1; /*cuadrados*/
 }
 
 .celda-interna {
     text-align: center;
+    align-self: center;
 }
 
 .superior, 
 .inferior {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    overflow: hidden; /* Soluciona flotaciones */
+    display: grid;
+    align-items: stretch;
     background-color: #b1a189;
     font-family: "Aboreto";
+    font-size: 1rem; /*escalable*/
+    padding: 0.5vw;
 }
 
-.superior .celda-interna, 
-.inferior .celda-interna {
-    float: left; /* Coloca las celdas en fila */
-    width: 12.5%; /* Divide el espacio en 8 partes iguales */
-    text-align: center;
-    padding: 5px; /* Espaciado opcional */
-    box-sizing: border-box;
+.superior {
+    grid-column: 1 / -1;
+    grid-row: 1;
 }
 
+.inferior {
+    grid-column: 1 / -1;
+    grid-row: -1;
+}
+
+/*celdas resaltadas*/
 .celda-resaltada {
     background-color: #442803;
     color: #fff;

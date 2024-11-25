@@ -1,0 +1,63 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+}
+
+main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main > div { /* esto afecta a todos los divs hijos dentro de main*/
+
+background-color: rgb(233, 233, 233);
+width: 275px;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 5px solid #525050;
+border-radius: 2px;
+
+
+}
+
+
+
+header {
+    background-color: rgb(158, 131, 131);
+    color: #292929;
+    text-align: center;
+    padding: 20px 0;
+    width: 1600px;
+   
+
+}
+
+footer {
+    padding-top: 10;
+    background-color: rgb(158, 131, 131);
+    color: #292929;
+    text-align: center;
+    padding: 20px 0;
+    width: 1600px;
+    height: 10px;
+
+}

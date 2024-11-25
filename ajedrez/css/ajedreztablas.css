@@ -1,37 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #beb9b0;
-    margin: 0;
-    padding: 0;
+body { 
+    margin: 40px;
+    background-color: #aaa08f;
 }
 
-h1 {
-    margin-top: 20px;
+.h1 {
+    font-family: "Aboreto";
+    text-align: center;
+}
+
+.contenedor {
+    width: 90%; /* Ancho relativo */
+    max-width: 600px; /* Límite máximo */
+    margin: 0 auto;
+    border: 4vw solid #463721;
+    border-radius: 2vw;
+    background-color: #463721;
+}
+
+.tablero {
+    width: 100%;
+    border-collapse: collapse;
     font-family: "Aboreto";
 }
-  
 
-.tableroajedrez {
-   
-    border-collapse: collapse;
-    margin: 20px auto;
-    width: 600px; /* Ajustamos el tamaño del tablero */
-    height: 600px; /* Mantener cuadrado */
-    border: 2px solid #000;
+thead th,
+tfoot th {
+    background-color: #b1a189;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
 }
 
-.tableroajedrez td {
-    width: 50px; 
-    height: 50px;
+tbody .celda {
+    width: 12.5%; /* 8 columnas */
+    padding: 0;
+    aspect-ratio: 1; /* Mantener cuadrados */
+    background-color: #b3894e;
+    color: #000;
 }
 
-.tableroajedrez tr:nth-child(odd) td:nth-child(odd),
-.tableroajedrez tr:nth-child(even) td:nth-child(even) {
-    background-color: #000; /* Cuadros negros */
+tbody .celda-resaltada {
+    background-color: #442803;
+    color: #fff;
 }
 
-.tableroajedrez tr:nth-child(odd) td:nth-child(even),
-.tableroajedrez tr:nth-child(even) td:nth-child(odd) {
-    background-color: #fff; /* Cuadros blancos */
+.indice-fila {
+    text-align: center;
+    background-color: #b1a189;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
 }
