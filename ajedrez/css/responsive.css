@@ -8,8 +8,8 @@ body {
     text-align: center;
     font-size: 4vw; /* Tamaño fluido */
 }
-
-/* Small devices (Large phones, 640px and up) */
+/*@media para importar características*/
+/* pantallas de 640px o más(móviles o tablets)*/
 @media (min-width: 640px) {
     .contenedor-body {
         width: 90%;
@@ -17,7 +17,7 @@ body {
     }
 }
 
-/* Medium devices (Tablets, 768px and up) */
+/*para que se ajuste a pantallas de 768px o más*/
 @media (min-width: 768px) {
     .contenedor-body {
         width: 80%;
@@ -25,7 +25,7 @@ body {
     }
 }
 
-/* Large devices (Laptops, 1024px and up) */
+/*pantallas de 1024px o más*/
 @media (min-width: 1024px) {
     .contenedor-body {
         width: 70%;
@@ -33,7 +33,7 @@ body {
     }
 }
 
-/* Largest devices (Desktops, 1280px and up) */
+/*pantallas de 1280px o mayor*/
 @media (min-width: 1280px) {
     .contenedor-body {
         width: 60%;

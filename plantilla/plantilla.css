@@ -9,7 +9,7 @@
 body {
 
     margin: 0;
-
+    
 }
 
 main {
@@ -33,18 +33,27 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: 5px solid #525050;
+border: 5px solid #9e8383;
 border-radius: 2px;
 
 
 }
 
+.contenedorint {
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 2px, solid #887878;
+    border-radius: 2px;
 
+    
+}
 
 header {
-    background-color: rgb(158, 131, 131);
+    background-color: #9e8383;
     color: #292929;
     text-align: center;
+    font-family: "Aboreto";
     padding: 20px 0;
     width: 1600px;
    
