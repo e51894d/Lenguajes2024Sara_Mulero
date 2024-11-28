@@ -26,7 +26,7 @@ main {
 
 main > div { /* esto afecta a todos los divs hijos dentro de main*/
 
-background-color: rgb(233, 233, 233);
+background-color: rgba(233, 233, 233, 0);
 width: 275px;
 height: 250px;
 display: flex;
@@ -69,4 +69,12 @@ footer {
     width: 1600px;
     height: 10px;
 
+}
+
+.espana{
+    border: 2px solid black;
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(to bottom, red 33.33%, yellow 33.33% 66.66%, red 66.66% );
+    margin: 0;
 }

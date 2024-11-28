@@ -6,10 +6,10 @@ body {
 .h1 {
     font-family: "Aboreto", sans-serif;
     text-align: center;
-    font-size: 4vw; /* Tamaño fluido */
+    font-size: 4vw; /*unidad fluid*/
 }
 /*@media para importar características*/
-/* pantallas de 640px o más(móviles o tablets)*/
+/*pantallas de 640px o más(móviles o tablets)*/
 @media (min-width: 640px) {
     .contenedor-body {
         width: 90%;
@@ -42,47 +42,46 @@ body {
 }
 
 .contenedor {
-    border: 5vw solid #463721; /* Borde fluido */
+    border: 5vw solid #463721; 
     text-align: center;
-    width: 80vw; /* Tamaño basado en el ancho de la ventana */
-    height: 80vw; /* Tamaño proporcional para mantener cuadrado */
+    width: 80vw; /*basado en el ancho de la ventana*/
+    height: 80vw; /*tamaño proporcional para mantener cuadrado*/
     margin: auto;
 }
   
 .contenedor-interno {
     background-color: #aaa08f;
-    display: flex; /* Mejor alineación con flexbox */
-    flex-wrap: wrap; /* Asegura que los elementos internos se ajusten */
+    display: flex; 
+    flex-wrap: wrap; /*esto sirve para asegurar que los elementos internos se ajusten */
     align-items: stretch;
 }
   
 .celda {
     background-color: #b3894e;
-    height: 12.5%; /* Proporcional a la altura del contenedor */
-    width: 12.5%; /* Proporcional al ancho del contenedor */
+    height: 12.5%; /*altura del contenedor proporcional*/
+    width: 12.5%; /*acho proporcional*/
     float: left;
     padding: 0;
     margin: auto;
-    box-sizing: border-box; /* Incluye el borde en las dimensiones */
 }
   
 .celda-interna {
     text-align: center;
-    font-size: 2vw; /* Tamaño de texto fluido */
+    font-size: 2vw; /*tamaño para texto fluid*/
     align-self: center;
 }
   
 .superior, 
 .inferior {
-    display: flex; /* Más consistente para alineación */
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #b1a189;
     font-family: "Aboreto", sans-serif;
-    border-radius: 1vw; /* Bordes redondeados en unidades relativas */
+    border-radius: 1vw; 
 }
   
-/* Aplica estilos a las celdas resaltadas */
+
 .celda-resaltada {
     background-color: #442803;
     color: #fff;
@@ -91,5 +90,51 @@ body {
     float: left;
     margin: auto;
     text-align: center;
-    box-sizing: border-box; /* Incluye el padding y borde dentro del tamaño */
+    box-sizing: border-box; /*incluye padding y borde*/
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+    border: 5vw solid #463721; 
+}
+
+.izquierda, 
+.derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b1a189;
+    font-family: "Aboreto", sans-serif;
+    border-radius: 1vw;
+    width: 5vw; /* ancho de las columnas laterales */
+}
+
+.celda-vertical {
+    text-align: center;
+    font-size: 2vw;
+    flex: 1; /* iguala la altura de las celdas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila {
+    display: flex;
+}
+.celda-lateral {
+    width: 30px; /* Tamaño ajustable */
+    text-align: center;
+    font-weight: bold;
+    color: #aaa08f;
+}
+.celda {
+    width: 50px; /* Ajusta según el diseño */
+    height: 50px;
 }
