@@ -1,0 +1,57 @@
+.cuba {
+    background: repeating-linear-gradient(#002a8f,
+            #002a8f 20%,
+            #fff 20%,
+            #fff 40%);
+    height: 150px;
+    width: 250px;
+    margin: 0;
+}
+
+.burkina {
+    background: linear-gradient(180deg,
+            #ef2b2d,
+            #ef2b2d 50%,
+            #009e49 0,
+            #009e49);
+    position: relative
+}
+
+.burkina-after {
+    position: absolute;
+    content: "★";
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    text-align: center;
+    top: calc(50% - 26px);
+    font-size: 36px;
+    color: #fcd116
+}
+
+.guinea {
+    background: linear-gradient(
+        to right, 
+        #ce1126 33.33333%, 
+        #fcd116 33.33333%, 
+        #fcd116 66.66667%, 
+        #009460 66.66667%)
+}
+
+.bissau {
+    background:linear-gradient(
+        90deg,
+        #ce1126 35%,transparent 0),
+        linear-gradient(
+            180deg,
+            #fcd116 50%,
+            #009e49 0);position:relative;
+            
+}            
+.guinea-bissau:before {
+    position:absolute;
+    content:"★";
+    color:#000;
+    font-size:40px;top:calc(50% - 27px);
+    left:10px}

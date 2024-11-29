@@ -1,0 +1,22 @@
+.italia {
+    background: linear-gradient(to right,
+            #009246 33px,
+            #fff 33px 66px,
+            #ce2b37 66px);
+}
+
+.belgica {
+    background: linear-gradient(to right,
+            black 33.33%,
+            #fddb20 33.33% 66.66%,
+            #ef303e 66.66%);
+}
+
+.francia {
+    background: linear-gradient(to right,
+            #002395 33.33%,
+            #fff 33.33%,
+            #fff 66.66%,
+            #ed2939 66.66%);
+}
+

@@ -1,0 +1,51 @@
+.reinounido {
+    background: linear-gradient(
+            to right,
+            transparent 0% 45%,
+            #9C0404 45% 55%,
+            transparent 55% 100%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 0% 40%,
+            #9c0404 40% 60%,
+            transparent 60% 100%
+        ),
+        linear-gradient(
+            to right,
+            transparent 0% 40%,
+            white 40% 60%,
+            transparent 60% 100%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 0% 35%,
+            white 35% 65%,
+            transparent 65% 100%
+        ),
+        linear-gradient(
+            to bottom right,
+            transparent 0% 45%,
+            #9c0404 45% 55%,
+            transparent 55% 100%
+        ),
+        linear-gradient(
+            to bottom left,
+            transparent 0% 45%,
+            #9c0404 45% 55%,
+            transparent 55% 100%
+        ),
+        linear-gradient(
+            to bottom right,
+            transparent 0% 40%,
+            white 40% 60%,
+            transparent 60% 100%
+        ),
+        linear-gradient(
+            to bottom left,
+            transparent 0% 40%,
+            white 40% 60%,
+            transparent 60% 100%
+        ),
+        #041a5e; /*se supone que con deg puedo poner las rayas rojas como en la original ¿?¿?*/
+}

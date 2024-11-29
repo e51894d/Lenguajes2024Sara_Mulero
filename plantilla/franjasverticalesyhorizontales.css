@@ -1,0 +1,10 @@
+.hungria {
+    
+    background: linear-gradient(to left, #cd2a3e 33.33333%, #fff 33.33333%, #fff 66.66667%, #436f4d 66.66667%)
+}
+
+.suiza {
+    
+    background:linear-gradient(to bottom,transparent 33.33333%,#fff 33.33333%,#fff 66.66667%,transparent 0),linear-gradient(to right,transparent 33.33333%,#fff 33.33333%,#fff 66.66667%,transparent 0),red;background-size:80px 80px;background-repeat:no-repeat;background-position:50px 20px;
+    background-position: center;
+}

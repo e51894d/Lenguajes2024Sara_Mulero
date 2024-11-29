@@ -1,0 +1,32 @@
+.espana{
+    border: 2px solid black;
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(to bottom, red 33.33%, yellow 33.33% 66.66%, red 66.66% );
+    margin: 0;
+}
+
+.bulgaria{
+
+    background:linear-gradient(to bottom,
+    #fff,
+    #fff 33.33333%,
+    #00966e 33.33333%,
+    #00966e 66.66%,
+    #d62612 66.66%,#d62612)
+}
+
+
+.alemania {
+    background: linear-gradient (black 33.33%, #de0000 33.33% 66.66%, #ffcf00 40px);
+}
+
+
+.paisesbajos {
+    background: linear-gradient(#ae1c28 33.33%, white 33.33% 66.66%, #21468b 40px);
+}
+
+.luxemburgo {
+    background: linear-gradient(#ef303e 33.33%, white 33.33% 66.66%, #00a4e1 33.33%);
+}
+
