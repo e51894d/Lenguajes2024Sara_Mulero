@@ -1,73 +1,53 @@
-body { 
-    margin: 5%;
-    background-color: #aaa08f;
-    font-size: 16px; /*esto es para mantener la escalabilidad*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/*para usar fluid tengo que ajustar las medidas con unidades relativas, em, rem o vw y vh, */
+
+body {
+    display: flex;
+    flex-direction: column; /*contenido en columna*/
+    justify-content: center; /*centra verticalmente*/
+    align-items: center; /*centra horizontalmente*/
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
 .h1 {
-    font-family: "Aboreto";
+    display: s;
+    margin-bottom: 5%;
     text-align: center;
-    font-size: 1.5rem; /*escalable*/
+    font-family: 'Aboreto', sans-serif;
+    font-size: 25px;
+    color: #333;
+    background-color: transparent; 
+    width: 100%; /*ancho del contenedor*/
 }
 
-.contenedor {
-    border: 4vw solid #463721;
-    border-radius: 2vw;
-    width: 90%; /*el tablero ocupa el 90% del ancho disponible*/
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: repeat(8, 1fr); /*columnas equitativas*/
-    grid-template-rows: auto repeat(8, 1fr) auto; /*filas automaticas, celdas no*/
-    grid-auto-flow: row;
+.tablero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vmin; /*Ajuste dinámico del tamaño*/
+    height: 70vmin; /*Ajuste dinámico del tamaño*/
+    background-color: #58545482;
 }
 
-.contenedor-interno {
-    background-color: #aaa08f;
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: repeat(8, auto);
-    grid-template-rows: auto;
-    grid-auto-flow: row;
-    align-items: stretch;
-}
+.casilla {
 
-.celda {
-    font-size: 1.2rem; /*escalable*/
-    background-color: #b3894e;
-    color: #000;
+    width: 10%; /*10 horizontales, para hacerle recuadro con borde para letras y números = 10%*/
+    height: 10%; /*10 verticales = 10%*/ 
+    background-color: #825d5d;
     text-align: center;
-    aspect-ratio: 1; /*cuadrados*/
+    font-size: x-large;
+    color: rgb(208, 200, 190);
+    padding-top: 3%;
+    font-family: "Aboreto", "Sans Serif";
 }
 
-.celda-interna {
-    text-align: center;
-    align-self: center;
+.negro {
+	background-color: #2f2d2d;
 }
 
-.superior, 
-.inferior {
-    display: grid;
-    align-items: stretch;
-    background-color: #b1a189;
-    font-family: "Aboreto";
-    font-size: 1rem; /*escalable*/
-    padding: 0.5vw;
-}
-
-.superior {
-    grid-column: 1 / -1;
-    grid-row: 1;
-}
-
-.inferior {
-    grid-column: 1 / -1;
-    grid-row: -1;
-}
-
-/*celdas resaltadas*/
-.celda-resaltada {
-    background-color: #442803;
-    color: #fff;
+.blanco {
+	background-color: #ddd;
 }

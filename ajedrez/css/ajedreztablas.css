@@ -4,11 +4,13 @@ background-color: rgb(194, 188, 180);
 
 }
 
-.h1{
-    
+.h1 {
+    position: sticky;
+    top: 0; /*fijar cabecera en borde superior*/
+    z-index: 10; /*una capa encima de los demás elements*/
+    padding: 10px;
     text-align: center;
-    font-family: "Aboreto";
-
+    font-family: 'Aboreto', sans-serif;
 }
 
 

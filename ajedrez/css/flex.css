@@ -3,18 +3,25 @@ body {
 }
 
 .tablero {
+	
 	width: 400px;
 	margin: auto;
 	padding: 40px;
 	border: 1px solid #353131;
 	border-radius: 10px;
-  background-color: #534c3d;
+  	background-color: #534c3d;
+
 }
 
-.h2 {
-
-    font-family: "Aboreto";
+.h1 {
+    position: sticky;
+    margin-bottom: 5%;
     text-align: center;
+    font-family: 'Aboreto', sans-serif;
+    font-size: medium;
+    font-size: 15px;
+    color: #333;
+    background-color: transparent; 
 
 }
 
