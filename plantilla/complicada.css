@@ -1,12 +1,10 @@
-.bandera {
+
+.reinounido {
   box-sizing: content-box;
     width: 250px;
     height: 150px;
     border: 2px, solid #887878;
     border-radius: 2px;
-}
-
-.reinounido {
   display: grid;
   place-items: center;
   overflow: hidden;

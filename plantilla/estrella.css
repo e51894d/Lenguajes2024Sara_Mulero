@@ -23,6 +23,11 @@
 }
 
 .burkina-after {
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 2px, solid #887878;
+    border-radius: 2px;
     position: absolute;
     content: "★";
     left: 0;
@@ -36,6 +41,11 @@
 }
 
 .guinea {
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 2px, solid #887878;
+    border-radius: 2px;
     background: linear-gradient(
         to right, 
         #ce1126 33.33333%, 
@@ -44,19 +54,94 @@
         #009460 66.66667%)
 }
 
-.bissau {
-    background:linear-gradient(
-        90deg,
-        #ce1126 35%,transparent 0),
-        linear-gradient(
-            180deg,
-            #fcd116 50%,
-            #009e49 0);position:relative;
-            
-}            
-.guinea-bissau:before {
-    position:absolute;
-    content:"★";
-    color:#000;
-    font-size:40px;top:calc(50% - 27px);
-    left:10px}
+
+
+.guinea_bissau {
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 2px, solid #887878;
+    border-radius: 2px;
+    background: linear-gradient(
+        #fcd20e 50%, 
+        #009e47 0);
+}
+
+.guinea_bissau__left_red {
+  background: #cf0922;
+  width: 45%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.guinea_bissau__estrella {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+
+  
+.bosnia {
+  box-sizing: content-box;
+  width: 250px;
+  height: 150px;
+  border: 2px solid #887878; /* Corrige la coma */
+  background-color: #001e96;
+  position: relative; /* Necesario para posicionar ::after */
+}
+
+.bosnia__triangulo {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.bosnia__triangulo::after {
+  content: ''; /*si o si para que ::after funcione*/
+  position: absolute;
+  top: -72%;
+  left: 35%;
+  border: 142px solid transparent;
+  border-left-color: #ffcc01; 
+  transform: rotate(-45deg);
+}
+
+.bosnia__estrella__wrapper {
+  filter: drop-shadow(25px 25px #fff) drop-shadow(25px 25px #fff)
+    drop-shadow(25px 25px #fff) drop-shadow(25px 25px #fff)
+    drop-shadow(25px 25px #fff) drop-shadow(25px 25px #fff)
+    drop-shadow(25px 25px #fff) drop-shadow(25px 25px #fff);
+}
+
+.bosnia__estrella__wrapper > .estrella {
+  width: 35px;
+  height: 35px;
+  margin: -20px 0px;
+  background-color: white;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
