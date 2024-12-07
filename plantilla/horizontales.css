@@ -1,10 +1,27 @@
-.espana{
-    border: 2px solid black;
-    width: 250px;
-    height: 150px;
-    background: linear-gradient(to bottom, red 33.33%, yellow 33.33% 66.66%, red 66.66% );
-    margin: 0;
-}
+.bandera {
+    position: relative;
+    width: 275px;
+    height: 250px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .botswana {
+    background-color: #6dabd2;
+    display: grid;
+    place-items: center;
+  }
+  
+  .botswana::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-width: 10px 0 10px 0;
+    border-color: white;
+    border-style: solid;
+  }
 
 .bulgaria{
 
