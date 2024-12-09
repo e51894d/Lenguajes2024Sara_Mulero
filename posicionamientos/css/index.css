@@ -2,9 +2,9 @@
 
 body {
     font-family: "Merriweather", Arial, sans-serif;
-    font-size:x-large;
+    font-size:larger;
     background-color: #c6bcbc;
-    background-image: url("../images/dumlao.jpg"); /* Ajusta la ruta aquí */
+    background-image: url("./images/traf-ukTd6UiQbLQ-unsplash.jpg"); /* Ajusta la ruta aquí */
     background-size: cover; /*para imagen cubra todo el fondo*/
     background-position: center; /*entrar la imagen */
     margin: 0;
@@ -14,9 +14,9 @@ body {
     height: 100vh;
 }
 
-.container {
-    background-color: #5554527a;
-    padding: 95px;
+.contenedor {
+    background-color: #acaaa51d;
+    padding: 80px 200px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -24,32 +24,27 @@ body {
 }
 
 .h1 {
-    
-    color: #e6dede;
+    align-items: center;
+    color: #FCF6F1;
     font-family: "Merriweather", Arial, sans-serif;
+    font-size: xx-large;
 }
 
 
-
-
-.form-link:hover {
-    background-color: #4b280f;
-    color: #2d1f16;
-}
-
-.button {
+.boton {
    
     padding: 10px 15px;
     margin: 5px;
     font-size: 16px;
     color: rgb(220, 211, 211);
-    background-color:rgb(35, 35, 43);
+    background-color: rgb(51, 49, 61);
     border: none;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    align-items: center;
 }
 
-.button:hover {
-    background-color:  #1C1C1C;
+.boton:hover {
+    background-color: rgb(160, 142, 126);
 }

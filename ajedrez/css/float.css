@@ -14,7 +14,7 @@ body {
 }
 
 .h1 {
-    display: s;
+    position: sticky;
     margin-bottom: 5%;
     text-align: center;
     font-family: 'Aboreto', sans-serif;
@@ -27,8 +27,8 @@ body {
 .tablero {
     display: flex;
     flex-wrap: wrap;
-    width: 70vmin; /*Ajuste dinámico del tamaño*/
-    height: 70vmin; /*Ajuste dinámico del tamaño*/
+    width: 60vmin; /*Ajuste dinámico del tamaño*/
+    height: 60vmin; /*Ajuste dinámico del tamaño*/
     background-color: #58545482;
 }
 
@@ -45,9 +45,9 @@ body {
 }
 
 .casilla:nth-child(odd) {
-    background-color: #2f2d2d; /* Negro */
+    background-color: #2f2d2d; /*para los impares*/
 }
 
 .casilla:nth-child(even) {
-    background-color: #ddd; /* Blanco */
+    background-color: #ddd; /*para los pares */
 }
