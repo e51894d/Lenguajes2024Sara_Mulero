@@ -1,11 +1,8 @@
 * {
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-/* ////////////////////////////////////////// */
-/* ////////////////////////////////////////// */
-/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
 
 h1 {
     color: white;
@@ -22,10 +19,6 @@ p{
     padding: 20px;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* CONTENIDO DE LA PÁGINA WEB */ 
-
 div.azul {
     background-color: blue;
     width: 100%;
@@ -34,60 +27,67 @@ div.azul {
 
 div.rojo {
     background-color: red;
-    width: 25%; /* Ajusta el ancho */
-    height: 90%; /* Ajusta el largo */
+    width: 25%; 
+    height: 90%; /*ancho y largo en relativos*/
     float: left; 
+    padding-top: 35vh;
 }
 
 div.verde {
     background-color: green;
-    width: 75%; /* Ocupa el espacio restante en la fila */
-    height: 45%; /* Ocupa la mitad de la altura */
-    float: right; /* Alinea el div verde a la derecha */
+    width: 75%; /*para ocupar el espacio restante en la fila*/
+    height: 45%; /* = mitad de la altura*/
+    float: right; /*div verde alineado a la derecha*/
+    padding-top: 10vh;
 }
 
 div.amarillo {
     background-color: yellow;
-    width: 75%; /* Ajusta el ancho */
-    height: 45%; /* Ocupa la mitad de la altura disponible */
-    float: right; /* Alinea el div amarillo a la derecha, debajo del verde */
+    width: 75%; 
+    height: 45%; 
+    padding-top: 10vh;
+    float: right; /*div amarillo a la derecha*/
+}
+.botonderecha {
+
+    width: 100px;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 49, 61);
+    border-radius: 5PX;
+    float: inline-start;
+    text-decoration: none;
 }
 
+.botonizquierda {
 
-
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
-
-#botonderecha {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+    width: 80px;
+    height: 35px;
+    padding-left: 15px;
+    padding-top: 9px;
+    margin: 5px;
+    margin-top: 40px;
+    margin-right: 900px;
+    font-size: 15px;
+    color: rgb(220, 211, 211);
+    background-color: rgb(51, 49, 61);
+    border-radius: 5px;
+    float: inline-start;
+    text-decoration: none;
 }
 
-#botonderecha img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.botonizquierda:hover {
+
+    background-color: rgb(160, 142, 126);
 }
 
-/* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
-#botonizquierda {
-    position: fixed;
-    bottom: 20px;
-    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#botonizquierda img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.botonderecha:hover {
+    
+    background-color: rgb(160, 142, 126);
 }

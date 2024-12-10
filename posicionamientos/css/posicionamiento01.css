@@ -38,6 +38,7 @@ div.rojo {
     width: 50%; 
     height: 60%; 
     float: right;
+    padding-top: 13vh;
 }
 
 div.verde {
@@ -46,6 +47,7 @@ div.verde {
     height: 60%;
     clear: both;
     float: left;
+    padding-top: 10vh;
 }
 
 div.amarillo {
@@ -53,17 +55,7 @@ div.amarillo {
     width: 50%;
     height: 60%; 
     float: right;
-}
-
-.contenedor {
-    margin-top: 50px;
-    background-color: #333230a7;
-    width: 100%;
-    height: 80px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: "Merriweather", Arial, sans-serif;
+    padding-top: 10vh; /*para centrarlos todos en cada uno de los apartados de colores*/
 }
 
 .botonderecha {
@@ -95,10 +87,6 @@ div.amarillo {
     border-radius: 5PX;
     float: inline-start;
     text-decoration: none;
-}
-
-.boton:hover {
-    background-color: rgb(160, 142, 126);
 }
 
 .botonizquierda:hover {

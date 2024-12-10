@@ -1,11 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh; /*Asegura que el body ocupe toda la altura de la ventana*/
-}
 
-
-*{
-    height: 70%;
+* {
+    height: 85%;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -14,60 +9,59 @@ body {
 h1 {
     color: white;
     text-align: center;
-    font-size: 33px;
+    font-size: 25px;
     padding: 20px;
 }
 
-p{
+p {
     color: black;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    padding: 20px;
+    padding:0;
 }
 
 
 div.azul {
+
+    width: 100%;
+    height: 30%;
     background-color: blue;
-    width: 100%; /*ancho*/
-    height: 30%; /*largo*/
+    padding-top: 0vh;
+
 }
 
 div.rojo {
+
+    width: 50%;/*ancho*/
+    height: 60%;/*largo*/
     background-color: red;
-    width: 50%; /*ancho*/
-    height: 60%; /*largo*/
     float: left;
+    padding-top: 10vh;
 }
 
 div.verde {
+
+    width: 50%;
+    height: 60%;
+    padding-top: 10vh; /*para centrarlos todos*/
     background-color: green;
-    width: 50%; /*ancho*/
-    height: 60%; /*largo*/
     float: right;
 }
 
 div.amarillo {
+
     background-color: yellow;
-    width: 100%; /*ancho*/
-    height: 40%; /*largo*/
+    height: 40%;
+    width: 100%;
+    padding-top: 10vh;
     clear: both;
 }
 
 /*botones*/
 
-.contenedor {
-    margin-top: 50px;
-    background-color: #333230a7;
-    width: 100%;
-    height: 80px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: "Merriweather", Arial, sans-serif;
-}
-
 .botonderecha {
+
     width: 100px;
     height: 40px;
     padding-left: 10px;
@@ -82,7 +76,9 @@ div.amarillo {
     float: inline-start;
     text-decoration: none;
 }
+
 .botonizquierda {
+
     width: 80px;
     height: 35px;
     padding-left: 13px;
@@ -98,14 +94,12 @@ div.amarillo {
     text-decoration: none;
 }
 
-.boton:hover {
-    background-color: rgb(160, 142, 126);
-}
-
 .botonizquierda:hover {
+
     background-color: rgb(160, 142, 126);
 }
 
 .botonderecha:hover {
+
     background-color: rgb(160, 142, 126);
 }
