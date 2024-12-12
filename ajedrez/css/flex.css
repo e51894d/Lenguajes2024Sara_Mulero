@@ -1,45 +1,43 @@
 body {
-	background: hsla(36, 70%, 70%, 0.25);
-}
-
-.tablero {
+	background: hsl(35, 9%, 57%);
+	font-family: 'Aboreto', sans-serif;
 	
-	width: 400px;
-	margin: auto;
-	padding: 40px;
-	border: 1px solid #353131;
-	border-radius: 10px;
-  	background-color: #534c3d;
-
 }
 
 .h1 {
-    position: sticky;
-    margin-bottom: 5%;
-    text-align: center;
-    font-family: 'Aboreto', sans-serif;
-    font-size: medium;
-    font-size: 15px;
-    color: #333;
-    background-color: transparent; 
-
+	position: sticky;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 15px;
+	color: #333;
+	background-color: transparent; 
 }
 
-.row {
-
+.tablero {
 	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	border: 1px solid #353131;
+	border-radius: 10px;
+	background-color: #534c3d;
 }
 
-.row div {
-
-  flex-grow: 1;
-aspect-ratio: 1;
+.casilla {
+	flex: 0 0 calc(10% - 2px); /*Cada casilla ocupa el 10% del ancho del tablero*/
+	aspect-ratio: 1; /*proporción cuadrada*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #ffffff;
 }
 
-.negro {
+.negra {
 	background-color: #353232;
 }
 
-.blanco {
+.blanca {
 	background-color: #ddd;
 }

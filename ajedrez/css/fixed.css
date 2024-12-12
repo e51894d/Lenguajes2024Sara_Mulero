@@ -1,26 +1,25 @@
 body {
-
     background-color: #9e9283;
-
 }
 
 .tablero {
-   
+    position: fixed; /*Fija el tablero en el viewport */
+    top: 50%; /*Centra verticalmente */
+    left: 50%; /*Centra horizontalmente */
+    transform: translate(-50%, -50%); /*Ajusta el centro al eje del tablero */
     width: 700px;
     height: 700px;
     border: 15px solid #452b07;
     border-radius: 15px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-
 }
 
 .h1 {
-    position: sticky;
-    top: 0; /*fijar cabecera en borde superior*/
-    z-index: 10; /*una capa encima de los demás elements*/
+    position: sticky; /*Mantén la cabecera pegada al borde superior */
+    top: 0; /*Fija al borde superior del contenedor */
+    z-index: 10; /*Capa superior para evitar que otros elementos la oculten */
     padding: 10px;
     text-align: center;
     font-family: 'Aboreto', sans-serif;
@@ -37,16 +36,12 @@ body {
     justify-content: center;
     display: flex;
     color: rgb(227, 222, 214);
-
-    
 }
 
 .blanca {
-
     background-color: rgb(238, 228, 228);
 }
 
 .negra {
-
     background-color: rgb(35, 34, 36);
 }
