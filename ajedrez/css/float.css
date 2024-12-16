@@ -1,53 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    display: flex;
-    flex-direction: column; /*contenido en columna*/
-    justify-content: center; /*centra verticalmente*/
-    align-items: center; /*centra horizontalmente*/
-    height: 100vh;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
 
-.h1 {
-    position: sticky;
-    margin-bottom: 5%;
-    text-align: center;
-    font-family: 'Aboreto', sans-serif;
-    font-size: 25px;
-    color: #333;
-    background-color: transparent; 
-    width: 100%; /*ancho del contenedor*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.tablero {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60vmin; /*Ajuste dinámico del tamaño*/
-    height: 60vmin; /*Ajuste dinámico del tamaño*/
-    background-color: #58545482;
+h1 {
+  padding: 20px 0; /* Espacio arriba y abajo pero sin darselo a los laterales */
+  color: #000000;
+  text-align: center;
+  font-family: "Aboreto";
+}
+
+.container {
+  width: 1000px;
+  height: 1010px;
+  margin: auto;
 }
 
 .casilla {
-
-    width: 10%; /*10 horizontales, para hacerle recuadro con borde para letras y números = 10%*/
-    height: 10%; /*10 verticales = 10%*/ 
-    background-color: #825d5d;
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgb(208, 200, 190);
-    padding-top: 1.5rem;
-    font-family: "Aboreto", "Sans Serif";
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  float: left;
 }
 
-.casilla:nth-child(odd) {
-    background-color: #2f2d2d; /*para los impares*/
+img{
+  width: 100px;
+  height: 100px;
 }
 
-.casilla:nth-child(even) {
-    background-color: #ddd; /*para los pares */
+.blanca {
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.negra {
+  background-image: url(./images/camphor-sealed-gw.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.horizontal{
+  color: #dfdcd7;
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover;
+  /*Configuración texto*/
+  font-size: 30px;
+  font-family: "Aboreto";
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
+
+}
+
+.vertical{
+  color: #dfdcd7;
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+  /*Configuración texto*/
+  font-size: 30px;
+  font-family: "Aboreto";
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
+}
+
+.esquina1{
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina2{
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina3{
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina4{
+  background-image: url(./images/camelthorn-sealed.jpg);
+  background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.clear {
+  clear: left;
 }
