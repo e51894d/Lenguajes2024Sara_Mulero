@@ -1,140 +1,76 @@
-body { 
-    margin: 5%;
-    background-color: #aaa08f;
+*{
+	box-sizing: border-box;
 }
 
-.h1 {
-    font-family: "Aboreto", sans-serif;
-    text-align: center;
-    font-size: 4vw; /*unidad fluid*/
-}
-/*@media para importar características*/
-/*pantallas de 640px o más(móviles o tablets)*/
-@media (min-width: 640px) {
-    .contenedor-body {
-        width: 90%;
-        background-color: orange;
-    }
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	font-family: "Aboreto";
+	text-align: center;
+	color: #FFF;
+	background-color: rgb(142, 130, 124);
 }
 
-/*para que se ajuste a pantallas de 768px o más*/
-@media (min-width: 768px) {
-    .contenedor-body {
-        width: 80%;
-        background-color: green;
-    }
+h1{
+	font-size: 1.5rem;
+	text-shadow: 0 2px 3px rgba(0,0,0,.75);
 }
 
-/*pantallas de 1024px o más*/
-@media (min-width: 1024px) {
-    .contenedor-body {
-        width: 70%;
-        background-color: blue;
-    }
+.board{
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	
+	display: flex;
+	flex-wrap: wrap;
+	border: 4vw solid transparent;
+	border-image: url("../css/images/camphor-sealed-gw.jpg") 50 stretch;
+	max-width: 480px;
+	max-height: 480px;
+	width: 100vw;
+	height: 100vw;
+	box-shadow: 0 10px 10px -5px rgba(0,0,0,.75);
+	font-size: 0;
+	background-image: url("../css/images/camphor-sealed-gw.jpg");
 }
 
-/*pantallas de 1280px o mayor*/
-@media (min-width: 1280px) {
-    .contenedor-body {
-        width: 60%;
-        background-color: red;
-    }
+.box{
+	width: 12.5%;
+	height: 12.5%;
+	font-size: 8vw;
+	line-height: 12vw;
 }
 
-.contenedor {
-    border: 5vw solid #463721; 
-    text-align: center;
-    width: 80vw; /*basado en el ancho de la ventana*/
-    height: 80vw; /*tamaño proporcional para mantener cuadrado*/
-    margin: auto;
-}
-  
-.contenedor-interno {
-    background-color: #aaa08f;
-    display: flex; 
-    flex-wrap: wrap; /*esto sirve para asegurar que los elementos internos se ajusten */
-    align-items: stretch;
-}
-  
-.celda {
-    background-color: #b3894e;
-    height: 12.5%; /*altura del contenedor proporcional*/
-    width: 12.5%; /*acho proporcional*/
-    float: left;
-    padding: 0;
-    margin: auto;
-}
-  
-.celda-interna {
-    text-align: center;
-    font-size: 2vw; /*tamaño para texto fluid*/
-    align-self: center;
-}
-  
-.superior, 
-.inferior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #b1a189;
-    font-family: "Aboreto", sans-serif;
-    border-radius: 1vw; 
-}
-  
-
-.celda-resaltada {
-    background-color: #442803;
-    color: #fff;
-    height: 12.5%;
-    width: 12.5%;
-    float: left;
-    margin: auto;
-    text-align: center;
-    box-sizing: border-box; /*incluye padding y borde*/
+.box:nth-child(n+1):nth-child(-n+16){
+	color: #222;
 }
 
-.contenedor {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    height: 80vw;
-    margin: auto;
-    border: 5vw solid #463721; 
+.board .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.board .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
+.board .box:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.board .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.board .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.board .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.board .box:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.board .box:nth-child(n+57):nth-child(-n+64):nth-child(odd){
+	background-color: rgba(47, 37, 31, 0.831);
 }
 
-.izquierda, 
-.derecha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #b1a189;
-    font-family: "Aboreto", sans-serif;
-    border-radius: 1vw;
-    width: 5vw; /* ancho de las columnas laterales */
-}
-
-.celda-vertical {
-    text-align: center;
-    font-size: 2vw;
-    flex: 1; /* iguala la altura de las celdas */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fila {
-    display: flex;
-}
-.celda-lateral {
-    width: 30px; /* Tamaño ajustable */
-    text-align: center;
-    font-weight: bold;
-    color: #aaa08f;
-}
-.celda {
-    width: 50px; /* Ajusta según el diseño */
-    height: 50px;
+@media screen and (min-width: 480px){
+	
+    .board{
+		border: 18px solid transparent;
+		border-image: url("../css/images/camelthorn-sealed.jpg") 50 stretch;
+		box-shadow: 0 15px 15px -5px rgba(0,0,0,.75);
+	}
+	.box{
+		font-size: 2.5rem;
+		line-height: 56px;}
+        
 }

@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  background-color: rgb(179, 163, 143);
 }
 
 * {
@@ -14,6 +15,7 @@ h1 {
   color: #000000;
   text-align: center;
   font-family: "Aboreto";
+  font-size: 3rem;
 }
 
 .container {
