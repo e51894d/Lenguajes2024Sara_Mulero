@@ -13,6 +13,10 @@ background-color: rgb(194, 188, 180);
     font-family: 'Aboreto', sans-serif;
 }
 
+img {
+    width: 50px;
+    height: 50px;
+}
 
 table {
     
@@ -22,6 +26,7 @@ table {
     width: 800px;
     height: 800px;
 }
+
 td {
     width: 50px;
     height: 50px;
@@ -33,9 +38,11 @@ td {
     background-color: rgba(137, 43, 226, 0);
     
 }
+
 .negro {
-    background-color: black;
+    background-color: rgb(48, 45, 45);
 }
+
 .blanco{
     background-color: white;
 }
