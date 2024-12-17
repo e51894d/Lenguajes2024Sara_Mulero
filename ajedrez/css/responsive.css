@@ -1,90 +1,67 @@
-* {
-    box-sizing: border-box;
-}
-
+/* Estilo general */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Aboreto', sans-serif;
-    text-align: center;
-    color: #FFF;
-    background-color: rgb(142, 130, 124);
-}
-
-h2 {
-    font-size: 1.5rem;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
-    margin-bottom: 20px;
-}
-
-/* Caja exterior del tablero */
-.container-board {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border: 10px solid rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    background-color: #5e4c47;
-    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.5);
-    max-width: 550px;
-    margin: auto;
-}
-
-/* Tablero */
-.board {
-    display: flex;
-    flex-wrap: wrap;
-    border: 4vw solid transparent;
-    border-image: url("../css/images/camphor-sealed-gw.jpg") 50 stretch;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Tablero */
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 90vw;
     max-width: 500px;
-    max-height: 500px;
+    aspect-ratio: 1 / 1;
+    border: 5px solid black;
+  }
+  
+  .chessboard div {
     width: 100%;
     height: 100%;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.75);
-    background-image: url("../css/images/camphor-sealed-gw.jpg");
-    font-size: 0; /* Elimina el espacio entre celdas */
-}
-
-/* Celdas del tablero */
-.box {
-    width: 10%; /* 1/10 del ancho */
-    height: 10%; /* 1/10 del alto */
-    font-size: 8vw;
-    line-height: 8vw;
-}
-
-/* Colores de las celdas alternas */
-.board .box:nth-child(odd) {
-    background-color: rgba(47, 37, 31, 0.831); /* Oscuro */
-}
-
-.board .box:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.8); /* Claro */
-}
-
-/* Celdas que contienen texto o piezas */
-.box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.box span {
-    display: block;
-    text-align: center;
-    color: #222;
-    font-size: 1rem;
-}
-
-@media screen and (min-width: 480px) {
-    .board {
-        border: 18px solid transparent;
-        border-image: url("../css/images/camelthorn-sealed.jpg") 50 stretch;
-        box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.75);
-    }
-    .box {
-        font-size: 2.5rem;
-        line-height: 56px;
-    }
-}
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-family: "Aboreto";
+    font-size: 15px; /* Tamaño de los números */
+    font-weight: bold; /* Hace los números más visibles */
+    color: #e0d7cd; /* Color predeterminado del texto */
+  }
+  
+  /*colores para celdas que hacen de borde*/
+  /*filas exteriores*/
+  .chessboard div:nth-child(-n+10),            /*Primera fila*/
+  .chessboard div:nth-child(n+91),             /*Última fila*/
+  .chessboard div:nth-child(10n+1),            /*Primera columna*/
+  .chessboard div:nth-child(10n) {             /*Última columna*/
+    background-color: #453c2f; /*Marrón*/
+  }
+  
+  /*colores para el tablero interior 8x8*/
+  .chessboard div:nth-child(n+12):nth-child(-n+19), /*Segunda fila del 8x8*/
+  .chessboard div:nth-child(n+22):nth-child(-n+29),
+  .chessboard div:nth-child(n+32):nth-child(-n+39),
+  .chessboard div:nth-child(n+42):nth-child(-n+49),
+  .chessboard div:nth-child(n+52):nth-child(-n+59),
+  .chessboard div:nth-child(n+62):nth-child(-n+69),
+  .chessboard div:nth-child(n+72):nth-child(-n+79),
+  .chessboard div:nth-child(n+82):nth-child(-n+89) {
+    background-color: #654111;
+  }
+  
+  /*alternar colores dentro del tablero 8x8*/
+  .chessboard div:nth-child(n+12):nth-child(-n+19):nth-child(even), /*Segunda fila*/
+  .chessboard div:nth-child(n+22):nth-child(-n+29):nth-child(odd),
+  .chessboard div:nth-child(n+32):nth-child(-n+39):nth-child(even),
+  .chessboard div:nth-child(n+42):nth-child(-n+49):nth-child(odd),
+  .chessboard div:nth-child(n+52):nth-child(-n+59):nth-child(even),
+  .chessboard div:nth-child(n+62):nth-child(-n+69):nth-child(odd),
+  .chessboard div:nth-child(n+72):nth-child(-n+79):nth-child(even),
+  .chessboard div:nth-child(n+82):nth-child(-n+89):nth-child(odd) {
+    background-color: #c8bdac;
+  }
+  
+  
