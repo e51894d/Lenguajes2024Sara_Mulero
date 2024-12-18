@@ -4,10 +4,18 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #bdb5ac;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: "Aboreto";
   }
   
-  /*Tablero*/
+  /*tablero*/
   .tablero {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -22,13 +30,13 @@ body {
   .tablero div {
     width: 100%;
     height: 100%;
-    display: flex; /*Habilita flexbox*/
-    justify-content: center; /*Centra horizontalmente el contenido*/
-    align-items: center; /*Centra verticalmente el contenido*/
+    display: flex; /*habilita flexbox*/
+    justify-content: center; /*centra horizontalmente el contenido*/
+    align-items: center; /*centra verticalmente el contenido*/
     font-family: "Aboreto";
-    font-size: 15 px; /*Tamaño de los números*/
-    font-weight: bold; /*Hace los números más visibles*/
-    color: #e0d7cd; /*Color predeterminado del texto*/
+    font-size: 15 px; 
+    font-weight: bold; /*hace los números más visibles*/
+    color: #e0d7cd; /*color predeterminado del texto*/
   }
 
   img {
@@ -38,12 +46,12 @@ body {
   }
   
   /*colores para celdas que hacen de borde*/
-  /*filas exteriores*/
-  .tablero div:nth-child(-n+10),            /*Primera fila*/
-  .tablero div:nth-child(n+91),             /*Última fila*/
-  .tablero div:nth-child(10n+1),            /*Primera columna*/
-  .tablero div:nth-child(10n) {             /*Última columna*/
-    background-color: #6c5f4d; /*Marrón*/
+  /*alrededor*/
+  .tablero div:nth-child(-n+10), /*primera fila*/
+  .tablero div:nth-child(n+91),   /*ultima fila*/
+  .tablero div:nth-child(10n+1),  /*primera columna*/
+  .tablero div:nth-child(10n) {  /*ultima columna*/
+    background-color: #6c5f4d;
   }
   
   /*colores para el tablero interior 8x8*/
