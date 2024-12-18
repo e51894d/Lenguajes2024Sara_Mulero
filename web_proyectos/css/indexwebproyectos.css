@@ -25,10 +25,13 @@ body {
     padding-bottom: 100px;
 }
 
-.contenedor1
+.contenedor1{
+ text-align: center;
+}
 
-.content {
-    text-align: jus;
+.content{
+
+    text-align: center;
     max-width: 800px;
 }
 
@@ -60,13 +63,9 @@ body {
 
 h1, h2 {
     color: black;
+    text-align: center;
 }
 
-h2 {
-    text-align: left;
-    font-size: 24px;
-    margin: 0;
-}
 
 a {
     color: black;
