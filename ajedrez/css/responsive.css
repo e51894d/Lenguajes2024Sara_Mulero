@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
     display: flex;
     justify-content: center;
@@ -8,59 +7,66 @@ body {
     background-color: #f0f0f0;
   }
   
-  /* Tablero */
-  .chessboard {
+  /*Tablero*/
+  .tablero {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     width: 90vw;
     max-width: 500px;
     aspect-ratio: 1 / 1;
-    border: 5px solid black;
+    border: 15px solid #322c23;
+    border-radius: 10px;
   }
   
-  .chessboard div {
+  .tablero div {
     width: 100%;
     height: 100%;
-    display: flex; /* Habilita flexbox */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    display: flex; /*Habilita flexbox*/
+    justify-content: center; /*Centra horizontalmente el contenido*/
+    align-items: center; /*Centra verticalmente el contenido*/
     font-family: "Aboreto";
-    font-size: 15px; /* Tamaño de los números */
-    font-weight: bold; /* Hace los números más visibles */
-    color: #e0d7cd; /* Color predeterminado del texto */
+    font-size: 15 px; /*Tamaño de los números*/
+    font-weight: bold; /*Hace los números más visibles*/
+    color: #e0d7cd; /*Color predeterminado del texto*/
+  }
+
+  img {
+
+    width: 2.5em;
+    height: 2.5em;
   }
   
   /*colores para celdas que hacen de borde*/
   /*filas exteriores*/
-  .chessboard div:nth-child(-n+10),            /*Primera fila*/
-  .chessboard div:nth-child(n+91),             /*Última fila*/
-  .chessboard div:nth-child(10n+1),            /*Primera columna*/
-  .chessboard div:nth-child(10n) {             /*Última columna*/
-    background-color: #453c2f; /*Marrón*/
+  .tablero div:nth-child(-n+10),            /*Primera fila*/
+  .tablero div:nth-child(n+91),             /*Última fila*/
+  .tablero div:nth-child(10n+1),            /*Primera columna*/
+  .tablero div:nth-child(10n) {             /*Última columna*/
+    background-color: #6c5f4d; /*Marrón*/
   }
   
   /*colores para el tablero interior 8x8*/
-  .chessboard div:nth-child(n+12):nth-child(-n+19), /*Segunda fila del 8x8*/
-  .chessboard div:nth-child(n+22):nth-child(-n+29),
-  .chessboard div:nth-child(n+32):nth-child(-n+39),
-  .chessboard div:nth-child(n+42):nth-child(-n+49),
-  .chessboard div:nth-child(n+52):nth-child(-n+59),
-  .chessboard div:nth-child(n+62):nth-child(-n+69),
-  .chessboard div:nth-child(n+72):nth-child(-n+79),
-  .chessboard div:nth-child(n+82):nth-child(-n+89) {
-    background-color: #654111;
+  .tablero div:nth-child(n+12):nth-child(-n+19), /*Segunda fila del 8x8*/
+  .tablero div:nth-child(n+22):nth-child(-n+29),
+  .tablero div:nth-child(n+32):nth-child(-n+39),
+  .tablero div:nth-child(n+42):nth-child(-n+49),
+  .tablero div:nth-child(n+52):nth-child(-n+59),
+  .tablero div:nth-child(n+62):nth-child(-n+69),
+  .tablero div:nth-child(n+72):nth-child(-n+79),
+  .tablero div:nth-child(n+82):nth-child(-n+89) {
+    background-color: #463724;
   }
   
   /*alternar colores dentro del tablero 8x8*/
-  .chessboard div:nth-child(n+12):nth-child(-n+19):nth-child(even), /*Segunda fila*/
-  .chessboard div:nth-child(n+22):nth-child(-n+29):nth-child(odd),
-  .chessboard div:nth-child(n+32):nth-child(-n+39):nth-child(even),
-  .chessboard div:nth-child(n+42):nth-child(-n+49):nth-child(odd),
-  .chessboard div:nth-child(n+52):nth-child(-n+59):nth-child(even),
-  .chessboard div:nth-child(n+62):nth-child(-n+69):nth-child(odd),
-  .chessboard div:nth-child(n+72):nth-child(-n+79):nth-child(even),
-  .chessboard div:nth-child(n+82):nth-child(-n+89):nth-child(odd) {
+  .tablero div:nth-child(n+12):nth-child(-n+19):nth-child(even), /*Segunda fila*/
+  .tablero div:nth-child(n+22):nth-child(-n+29):nth-child(odd),
+  .tablero div:nth-child(n+32):nth-child(-n+39):nth-child(even),
+  .tablero div:nth-child(n+42):nth-child(-n+49):nth-child(odd),
+  .tablero div:nth-child(n+52):nth-child(-n+59):nth-child(even),
+  .tablero div:nth-child(n+62):nth-child(-n+69):nth-child(odd),
+  .tablero div:nth-child(n+72):nth-child(-n+79):nth-child(even),
+  .tablero div:nth-child(n+82):nth-child(-n+89):nth-child(odd) {
     background-color: #c8bdac;
   }
   
