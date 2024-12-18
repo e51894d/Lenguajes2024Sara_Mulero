@@ -1,33 +1,88 @@
-/* Estilo para el tablero */
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    width: 90vmin;
-    height: 90vmin;
-    border: 2px solid #000;
-  }
-  
-  /* Estilo para las casillas */
-  .square {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .square:nth-child(odd) {
-    background-color: #000;
-  }
-  
-  .square:nth-child(even) {
-    background-color: #fff;
-  }
-  
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #bdb5ac;
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column; /*Elementos en columna*/
+  align-items: center;    /*Centrado horizontal*/
+  gap: 15px;              /*Espacio entre título y tablero*/
+  font-family: "Aboreto";
+}
+
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem); /*Título adaptable*/
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /*10 columnas iguales*/
+  grid-template-rows: repeat(10, 1fr);    /*10 filas iguales*/
+  width: 90vw; /*tamaño relativo al ancho de la pantalla*/
+  max-width: 500px; /*tamaño máximo*/
+  aspect-ratio: 1 / 1; /*asegura que sea cuadrado*/
+  border: 15px solid #322c23;
+  border-radius: 10px;
+}
+
+
+.tablero div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  font-family: "Aboreto";
+  font-size: clamp(12px, 2vw, 15px); /*tamaño de fuente adaptable*/
+  font-weight: bold;
+  color: #e0d7cd; 
+}
+
+img {
+
+  width: 2.5em;
+  height: 2.5em;
+}
+
+/*colores para celdas que hacen de borde*/
+/*alrededor*/
+.tablero div:nth-child(-n+10), /*primera fila*/
+.tablero div:nth-child(n+91),    /*ultima fila*/
+.tablero div:nth-child(10n+1),  /*primera columna*/
+.tablero div:nth-child(10n) {  /*ultima columna*/
+  background-color: #6c5f4d;
+}
+
+/*colores para el tablero interior 8x8*/
+.tablero div:nth-child(n+12):nth-child(-n+19), /*sgunda fila del 8x8*/
+.tablero div:nth-child(n+22):nth-child(-n+29),
+.tablero div:nth-child(n+32):nth-child(-n+39),
+.tablero div:nth-child(n+42):nth-child(-n+49),
+.tablero div:nth-child(n+52):nth-child(-n+59),
+.tablero div:nth-child(n+62):nth-child(-n+69),
+.tablero div:nth-child(n+72):nth-child(-n+79),
+.tablero div:nth-child(n+82):nth-child(-n+89) {
+  background-color: #463724;
+}
+
+/*alternar colores dentro del tablero 8x8*/
+.tablero div:nth-child(n+12):nth-child(-n+19):nth-child(even), /*segunda fila*/
+.tablero div:nth-child(n+22):nth-child(-n+29):nth-child(odd),
+.tablero div:nth-child(n+32):nth-child(-n+39):nth-child(even),
+.tablero div:nth-child(n+42):nth-child(-n+49):nth-child(odd),
+.tablero div:nth-child(n+52):nth-child(-n+59):nth-child(even),
+.tablero div:nth-child(n+62):nth-child(-n+69):nth-child(odd),
+.tablero div:nth-child(n+72):nth-child(-n+79):nth-child(even),
+.tablero div:nth-child(n+82):nth-child(-n+89):nth-child(odd) {
+  background-color: #c8bdac;
+}
