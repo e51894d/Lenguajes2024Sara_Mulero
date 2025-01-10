@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+        <html>
+        <head>
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                }
+
+                .biblioteca {
+                    background-color: #9fac81;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content:center;
+                    padding: 20px;
+                }
+
+                .libro {
+                    background-color: #f1f1f1;
+                    opacity: 0.8;
+                    width: 300px;
+                    margin: 10px;
+                    padding: 1vw;
+                    font-size: 1.2em;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+                .titulo {
+                    font-size: 2em;
+                    padding: .1em;
+                    text-align: center;
+                    color: #333;
+                }
+
+                .autor {
+                    display: inline-block;
+                    color: rgb(214, 137, 36);
+                    font-size: 1.3em;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .capitulo {
+                    font-weight: bold;
+                }
+
+                .texto {
+                    font-weight: 100;
+                    font-size: 1em;
+                    color: #666;
+                }
+
+                /* Estilo adicional para una mejor vista */
+                h1 {
+                    text-align: center;
+                    color: #002E4C;
+                    font-size: 2.5em;
+                    margin: 20px 0;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Catálogo de Libros</h1>
+            <div class="biblioteca">
+                <xsl:for-each select="catalogo/libro">
+                    <div class="libro">
+                        <div class="titulo">
+                            <xsl:value-of select="titulo"/>
+                        </div>
+                        <div class="autor">
+                            Autor: <xsl:value-of select="autor"/>
+                        </div>
+                        <div class="texto">
+                            Género: <xsl:value-of select="genero"/>
+                        </div>
+                        <div class="texto">
+                            Precio: $<xsl:value-of select="precio"/>
+                        </div>
+                        <div class="texto">
+                            Publicación: <xsl:value-of select="publicacion"/>
+                        </div>
+                        <div class="texto">
+                            ISBN: <xsl:value-of select="isbn"/>
+                        </div>
+                    </div>
+                </xsl:for-each>
+            </div>
+        </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>
+
