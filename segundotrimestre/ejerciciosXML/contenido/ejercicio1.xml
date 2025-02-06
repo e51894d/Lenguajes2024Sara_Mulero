@@ -1,0 +1,18 @@
+<!DOCTYPE catalogo [
+  <!ELEMENT catalogo (libro*)>
+  <!ELEMENT libro (titulo, autor, genero, precio, publicacion)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT genero (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT publicacion (#PCDATA)>
+]>
+<catalogo>
+  <libro>
+    <titulo>El Quijote</titulo>
+    <autor>Miguel de Cervantes</autor>
+    <genero>Novela</genero>
+    <precio>15.99</precio>
+    <publicacion>1605</publicacion>
+  </libro>
+</catalogo>
