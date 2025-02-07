@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda>
+    <contacto>
+        <nombre>Sara Mlhr </nombre>
+        <edad>82</edad>
+        <telefono tipo="móvil">+77 777 777 777</telefono>
+        <correo>sm@gmail.com</correo>
+        <ciudad>Jakutia</ciudad>
+    </contacto>
+
+    <contacto>
+        <nombre>Park Shin Hye</nombre>
+        <edad>31</edad>
+        <telefono tipo="fijo">+32 000 000 000</telefono>
+        <correo>pshye@gmail.com</correo>
+        <ciudad>Corea</ciudad>
+    </contacto>
+
+    <contacto>
+        <nombre>Jesucristo Spstar</nombre>
+        <edad>33</edad>
+        <telefono tipo="móvil">+66 666 666 666</telefono>
+        <correo>jesussuperestrella@gmail.com</correo>
+        <ciudad>Jerusalen</ciudad>
+    </contacto>
+</agenda>
