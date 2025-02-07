@@ -1,79 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/css" href="index.css"?>
-
 
 <!DOCTYPE biblioteca [
   <!ELEMENT biblioteca (libro+, piepagina)>
   <!ELEMENT libro (titulo, portada, autor, resumen)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT portada (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT resumen (#PCDATA)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT portada EMPTY>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT resumen (#PCDATA)>
   <!ATTLIST libro paginas CDATA #REQUIRED>
   <!ATTLIST portada foto CDATA #REQUIRED>
 
-  <!--pie de pág-->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>
 
-  <!--biblioteca-->
 <biblioteca>
-  <!--libro1-->
   <libro paginas="192">
     <titulo>Cartero</titulo>
-    <portada foto="carteroportada"></portada>
+    <portada foto="carteroportada"/>
     <autor>Charles Bukowski</autor>
     <resumen>
       En Cartero, Charles Bukowski describe los doce años en que estuvo empleado 
       en una sórdida oficina de correos de Los Ángeles. 
-      El libro termina cuando Chinaski/Bu­kowski abandona la miserable seguridad 
+      El libro termina cuando Chinaski/Bukowski abandona la miserable seguridad 
       de su empleo, a los 49 años, para dedicarse exclusivamente a escribir. 
       Y escribe Cartero, su primera novela.
     </resumen>
   </libro>
 
-  <!--libro2-->
-  <libro paginas="300">
-    <titulo>El Significado de la Cábala</titulo>
-    <portada foto="kabbalah"></portada>
-    <autor>Leo Schaya</autor>
+  <libro paginas="200">
+    <titulo>Pulp</titulo>
+    <portada foto="pulp"/>
+    <autor>Charles Bukowski</autor>
     <resumen>
-      "El Significado Universal de la Cábala" es una obra esencial para quienes buscan entender las enseñanzas profundas y espirituales que se encuentran en la Cábala, un sistema místico y filosófico que ha influenciado profundamente tanto a la religión judía como a otras tradiciones espirituales. Leo Schaya presenta una visión integral de la Cábala, explicando sus conceptos clave y su aplicación en la vida cotidiana.
-
-      El libro examina la estructura del Árbol de la Vida, un diagrama simbólico que representa las fuerzas divinas que actúan en el mundo y en el alma humana. Schaya explica cómo la Cábala no solo es una doctrina religiosa, sino también un sistema filosófico que busca la comprensión de la relación entre el hombre y lo divino. A través de una serie de meditaciones y estudios simbólicos, el autor ayuda al lector a entender cómo las enseñanzas cabalísticas pueden ser aplicadas para alcanzar un mayor entendimiento de uno mismo y del universo.
-
-      La obra también incluye un análisis de los principales textos cabalísticos, como el Zohar, y presenta la Cábala como una vía de conocimiento directo que permite al individuo trascender la realidad material y conectar con la fuente divina. Schaya aborda cómo la Cábala ha influenciado no solo la espiritualidad judía, sino también a figuras clave del pensamiento occidental, desde los filósofos hasta los místicos.
+    En Los Ángeles corre un rumor muy extraño. Se dice que un tal Céline, que merodea 
+    por las librerías inspeccionando a la competencia y buscando primeras ediciones de 
+    Faulkner, sería nada más ni nada menos que Louis Ferdinand, que no habría muerto en
+    1961 en Meudon. Nick Belane, un detective privado muy poco intelectual, es el encargado
+    de averiguar la verdad. ¿Y quién quiere saberla? Una dama muy fatal, quizá la más fatal
+    de todas, que no acepta que Céline pudiera haber escapado a su mortal encanto. Pero de
+    repente la temporada de trabajo se ha vuelto muy buena para Nick y tiene varios asuntos
+    más entre manos: encontrar el Gorrión Rojo, que no es el nieto del Halcón Maltés para un 
+    tal John Barton, y descubrir si Cindy, la mujer de Jack Bass, engaña a su marido. Pero, como
+    ya demostró cumplidamente Raymond Chandler, todos los casos de un detective siempre se lían 
+    entre sí, y entre Cindy y Céline se organizará un lío considerable.
     </resumen>
   </libro>
 
-  <!--libro3-->
   <libro paginas="500">
-    <titulo>Libro de la Sabiduría Vol. II</titulo>
-    <portada foto="sabiduria"></portada>
-    <autor>Revival of Wisdom</autor>
+    <titulo>La Danza de la muerte</titulo>
+    <portada foto="danza"/>
+    <autor>Douglas Preston y Lincoln Child</autor>
     <resumen>
-      El "Libro de la Sabiduría Vol. II" es una obra esotérica que profundiza en los misterios espirituales universales, ofreciendo una comprensión profunda sobre la conexión entre la conciencia humana y el cosmos. Este volumen continúa el legado de sabiduría ancestral, basado en enseñanzas de antiguos místicos, filósofos y sabios que han transmitido conocimientos ocultos a lo largo de los siglos.
-
-      A través de sus páginas, se exploran conceptos fundamentales como la energía universal, el propósito de la vida, la meditación y la trascendencia del ser humano hacia un estado de conciencia superior. Los capítulos abordan la ciencia espiritual, las leyes cósmicas y la evolución del alma, brindando herramientas prácticas y ejercicios para la expansión de la conciencia, la transformación interior y el acceso a una comprensión más profunda del universo. Además, el autor ofrece una visión sobre la sabiduría oculta presente en las culturas antiguas, con el objetivo de conectar al lector con su sabiduría interior y alcanzar un nivel de entendimiento trascendental.
+    Tras la supuesta muerte del inspector Pendergast, enfrentado a su malvado hermano Diógenes
+    (La mano del diablo), el detective D'Agosta cumple las instrucciones de Pendergast: detener
+    a Diógenes, que ha anunciado la comisión inminente de un espectacular crimen. Pendergast, 
+    amparado por su propia muerte, ha de moverse deprisa y con gran riesgo para tender una trampa
+    a su hermano: tendrá que convertirse en ladrón si quiere atraparlo.
     </resumen>
   </libro>
 
-  <!--libro4-->
-  <libro paginas="342">
-    <titulo>1984</titulo>
-    <portada foto="1984"></portada>
+  <libro paginas="528">
+    <titulo>Los Asesinatos de Manhattan</titulo>
+    <portada foto="manhattan"/>
     <autor>George Orwell</autor>
     <resumen>
-      "1984" es una obra maestra de la literatura distópica que describe un futuro totalitario y opresivo donde el gobierno, conocido como el Partido, controla cada aspecto de la vida de los ciudadanos. En la sociedad descrita en el libro, el concepto de "libertad" ha desaparecido, y la vigilancia constante a través de dispositivos como el "telepantalla" es la norma.
+    Durante los trabajos de excavación para construir un nuevo bloque de apartamentos en Manhattan,
+    los obreros hacen un descubrimiento espeluznante: los restos de treinta y seis personas torturadas
+    y mutiladas, víctimas de un asesino que aterrorizó a la ciudad de Nueva York a finales del XIX.
 
-      El protagonista, Winston Smith, es un miembro del Partido que trabaja en el Ministerio de la Verdad, donde se encarga de reescribir la historia para que coincida con la narrativa oficial del régimen. A medida que Winston se rebela internamente contra la opresión, busca la verdad y se enamora de Julia, su compañera en la resistencia. Sin embargo, el Partido tiene el control total sobre la mente humana, y la "doble verdad" y la "neolengua" son herramientas utilizadas para manipular el pensamiento.
-
-      La novela examina temas como la represión, la vigilancia, la manipulación de la verdad y la importancia de la privacidad en una sociedad libre. "1984" es una crítica mordaz a los regímenes totalitarios y una reflexión profunda sobre los peligros de perder la autonomía en un mundo cada vez más controlado.
+    El agente especial Pendergast del FBI convence a Nora Kelly, arqueóloga del Museo de Historia Natural,
+    de que le ayude a resolver el misterio de aquellas muertes. Pero lo que era solo una inquietante
+    investigación histórica se convierte en la caza desesperada de un cruel asesino, cuando sobre la
+    ciudad se abate una oleada de asesinatos casi idénticos a los de un siglo atrás.
     </resumen>
   </libro>
 
-  <!--pie de pag-->
   <piepagina>
     <p>sara mh</p>
   </piepagina>
