@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuracion SYSTEM "configuracion.dtd">
+
+<configuracion>
+
+    <informaciongeneral>
+        <nombre>Lenguajes2024_PHM</nombre>
+        <version>7.1.0</version>
+        <autor>Park Hye Min</autor>
+    </informaciongeneral>
+
+    <basededatos>
+        <host>localhost</host>
+        <puerto>5530</puerto>
+        <usuario>admin</usuario>
+        <contrasena>1234</contrasena>
+        <nombreBD>PHyeMin Database</nombreBD>
+    </basededatos>
+
+</configuracion>

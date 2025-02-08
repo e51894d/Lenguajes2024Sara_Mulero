@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fichatecnica SYSTEM "ficha.dtd">
+<fichatecnica>
+    <marca>Volvo</marca>
+    <modelo>XC40</modelo>
+    <año>2025</año>
+    <matricula>1234-MJC</matricula>
+    <potencia unidad="CV">200</potencia>
+</fichatecnica>

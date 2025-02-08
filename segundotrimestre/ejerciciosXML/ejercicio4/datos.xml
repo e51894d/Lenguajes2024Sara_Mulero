@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento SYSTEM "datos.dtd">
+<documento>
+    <datos>
+        <nombre>Elena Jurado Maestre</nombre>
+        <dni>12345678F</dni>
+        <informacion>
+            <nombre>Elena Jurado Maestre</nombre>
+            <dni>12345678F</dni>
+            <fechanac>27-07-1997</fechanac>
+            <direccion>Calle Antonio Machado 28</direccion>
+            <ciudad>Cordoba</ciudad>
+            <sexo>Femenino</sexo>
+        </informacion>
+    </datos>
+</documento>

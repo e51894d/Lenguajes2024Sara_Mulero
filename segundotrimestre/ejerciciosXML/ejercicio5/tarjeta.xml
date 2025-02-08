@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento SYSTEM "tarjeta.dtd">
+<documento>
+    <datos>
+        <titulo>Tarjeta de Crédito</titulo>
+        <informacion>
+            <nombre>Sara Ml Hr</nombre>
+            <numero>0000-0000-0000-0000</numero>
+            <validez>01-2040</validez>
+            <credito>7777EUR</credito>
+        </informacion>
+    </datos>
+</documento>
