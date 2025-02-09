@@ -9,7 +9,7 @@
 body {
     font-family: "Montserrat";
     font-size:larger;
-    background-image: url("https://wallpapers.com/images/hd/4k-firewatch-river-stream-vnjdrwvxeo4f66qt.jpg");
+    background-image: url("./images/elijah-hiett-f0huI7_HjWw-unsplash.jpg");
     background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
     background-blend-mode: lighten;
     background-size: cover;
