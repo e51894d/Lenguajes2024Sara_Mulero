@@ -1,0 +1,87 @@
+/* Importa la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #9a8b1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 900px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    background: rgba(61, 59, 59, 0.445);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header p {
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+h2 {
+    color: #dfd8d8;
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #c5b9b9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: "- ";
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a.boton {
+    display: inline-block;
+    background: #4e5909;;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a.boton:hover {
+    background: #4a5103;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #c8bdbd;
+    font-size: 0.9rem;
+}

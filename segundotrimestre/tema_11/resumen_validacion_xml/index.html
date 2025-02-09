@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Mulero Herrero">
+    <title>Ejercicios del Segundo Trimestre</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_forward" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Validación XML Schema (XSD)</h1>
+            <p>XML Schema Definition (XSD) es un lenguaje basado en XML que define la estructura, contenido y restricciones de documentos XML.
+            Su propósito es garantizar que un archivo XML cumpla con un conjunto de reglas predefinidas, lo que facilita la validación de datos y la interoperabilidad
+            entre sistemas.
+            <br>
+            
+            <p>A diferencia de Document Type Definition (DTD), XSD tiene una sintaxis basada en XML, lo que lo hace más expresivo y compatible con herramientas modernas. Además, permite definir tipos de datos más precisos, anidamientos complejos y restricciones avanzadas sobre los datos.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Estructura Básica de un XSD</h2>
+                <p>Un archivo XSD suele tener la extensión .xsd y se asocia con documentos XML mediante el atributo xsi:noNamespaceSchemaLocation en la cabecera del archivo XML.
+            </section>
+
+            <section>
+                <p>Ejemplo de asociación de un XML con su esquema:</p>
+                <pre>
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="persona.xsd"&gt;
+                &lt;autor&gt;Benito Pérez G.&lt;/autor&gt;
+                &lt;edad>67&lt;/edad&gt;
+                &lt;/persona&gt;
+                </pre>
+                <p>El archivo XSD correspondiente define la estructura válida de este documento.</p>
+            </section>
+
+            <section>
+                <h2>Elementos Clave en XSD</h2>
+                <b>Elementos Simples</b>
+                <p>Los elementos simples contienen solo texto y pueden estar restringidos a tipos de datos específicos como cadenas, números o fechas.
+
+                    Ejemplo de definición de elementos simples:</p>
+                <pre>
+                    &lt;xs:element name="nombre" type="xs:string"/&gt;
+                    &lt;xs:element name="edad" type="xs:integer"/&gt;
+                </pre>
+
+                <b>Elementos Complejos</b>
+                <p>Los elementos complejos pueden contener otros elementos y atributos. Permiten organizar datos en estructuras jerárquicas.</p>
+                <pre>
+                    &lt;xs:complexType name="Persona"&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="nombre" type="xs:string"/&gt;
+                            &lt;xs:element name="edad" type="xs:integer"/&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType>&gt;
+                </pre>
+                <b>Restricciones y Validación</b>
+                <p>Las restricciones (facetas) permiten definir reglas sobre los valores de los elementos, como rangos numéricos, longitudes de cadena o patrones específicos.</p>
+                <p>Ejemplo de restricción en la edad (entre 0 y 120):</p>
+
+                <pre>
+                    <xs:element name="edad">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="0"/>
+                                <xs:maxInclusive value="120"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+
+                </pre>
+            </section>
+
+            <section>
+                <h2>Ventajas de XML</h2>
+                <ul>
+                    <li>Independencia de plataforma y software.</li>
+                    <li>Permite personalización de etiquetas.</li>
+                    <li>Compatibilidad con lenguajes como HTML y JSON.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Aplicaciones Comunes</h2>
+                <ul>
+                    <li>Almacenamiento y transporte de datos.</li>
+                    <li>Configuración de sistemas.</li>
+                    <li>Intercambio de datos en servicios web.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Enlaces de Interés</h2>
+                <p><a href="https://www.w3.org/XML/" class="boton">Documentación oficial de XML</a></p>
+                <p><a href="https://www.w3schools.com/xml/" class="boton">Tutorial sobre XML en W3Schools</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Realizado por Sara Mlhrs. Trabajo de Lenguajes de Marcas y Sistemas de Gestión de Información.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
