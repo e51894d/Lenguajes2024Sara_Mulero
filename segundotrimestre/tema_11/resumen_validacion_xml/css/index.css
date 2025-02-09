@@ -7,7 +7,7 @@ body {
     color: #ffffff;
     line-height: 1.6;
     margin: 0;
-    background-color: #9a8b1a;
+    background-color: #83672a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
     width: 900px;
     margin-top: 90px;
     margin-bottom: 20px;
-    background: rgba(61, 59, 59, 0.445);
+    background: rgba(42, 35, 28, 0.612);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -36,6 +36,10 @@ header h1 {
 
 header p {
     color: #ffffff;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 section {
@@ -50,7 +54,7 @@ h2 {
 }
 
 pre {
-    background: #c5b9b9;
+    background: #372f27;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;

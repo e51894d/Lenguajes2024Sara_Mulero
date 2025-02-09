@@ -31,11 +31,11 @@
             <section>
                 <p>Ejemplo de asociación de un XML con su esquema:</p>
                 <pre>
-            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
                 &lt;persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="persona.xsd"&gt;
-                &lt;autor&gt;Benito Pérez G.&lt;/autor&gt;
-                &lt;edad>67&lt;/edad&gt;
+                &lt;xsi:noNamespaceSchemaLocation="persona.xsd"&gt;
+                &lt;nombre&gt;Benito Pérez G.&lt;/nombre&gt;
+                &lt;edad&gt;67&lt;/edad&gt;
                 &lt;/persona&gt;
                 </pre>
                 <p>El archivo XSD correspondiente define la estructura válida de este documento.</p>
@@ -55,52 +55,58 @@
                 <b>Elementos Complejos</b>
                 <p>Los elementos complejos pueden contener otros elementos y atributos. Permiten organizar datos en estructuras jerárquicas.</p>
                 <pre>
-                    &lt;xs:complexType name="Persona"&gt;
-                        &lt;xs:sequence&gt;
+                    &lt;xs:complexType name="Persona"/&gt;
+                        &lt;xs:sequence/&gt;
                             &lt;xs:element name="nombre" type="xs:string"/&gt;
                             &lt;xs:element name="edad" type="xs:integer"/&gt;
-                        &lt;/xs:sequence&gt;
-                    &lt;/xs:complexType>&gt;
+                        &lt;/xs:sequence/&gt;
+                    &lt;xs:complexType/&gt;
                 </pre>
                 <b>Restricciones y Validación</b>
                 <p>Las restricciones (facetas) permiten definir reglas sobre los valores de los elementos, como rangos numéricos, longitudes de cadena o patrones específicos.</p>
                 <p>Ejemplo de restricción en la edad (entre 0 y 120):</p>
 
                 <pre>
-                    <xs:element name="edad">
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer">
-                                <xs:minInclusive value="0"/>
-                                <xs:maxInclusive value="120"/>
-                            </xs:restriction>
-                        </xs:simpleType>
-                    </xs:element>
-
+                    &lt;xs:element name="edad"/&gt;
+                    &lt;xs:simpleType>
+                    &lt;xs:restriction base="xs:integer"/&gt;
+                    &lt;xs:minInclusive value="0"/&gt;
+                    &lt;xs:maxInclusive value="120"/&gt;
+                    &lt;/xs:restriction/&gt;
+                    &lt;/xs:simpleType/&gt;
+                    &lt;/xs:element/&gt;
                 </pre>
             </section>
 
             <section>
-                <h2>Ventajas de XML</h2>
-                <ul>
-                    <li>Independencia de plataforma y software.</li>
-                    <li>Permite personalización de etiquetas.</li>
-                    <li>Compatibilidad con lenguajes como HTML y JSON.</li>
-                </ul>
+                <h2>Uso de atributos</h2>
+                <p>XSD permite definir atributos para elementos,
+                lo que agrega información adicional sin afectar la estructura de los datos.</p>
+                <pre>
+                    &lt;xs:attribute name="id" type="xs:string" use="optional"/&gt;
+                </pre>
             </section>
 
             <section>
-                <h2>Aplicaciones Comunes</h2>
-                <ul>
-                    <li>Almacenamiento y transporte de datos.</li>
-                    <li>Configuración de sistemas.</li>
-                    <li>Intercambio de datos en servicios web.</li>
-                </ul>
+                <h2>Herencia y reutilización de definiciones</h2>
+                <p>
+                    Los XSD pueden incluir documentación interna para describir el propósito de los
+                    elementos y atributos mediante xs:annotation y xs:documentation.
+                </p>
+                <p>Ejemplo de documentación dentro de un XSD:</p>
+                <pre>
+                    &lt;xs:annotation&gt;
+                    &lt;xs:documentation>Define la estructura de una persona en el sistema.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                </pre>
             </section>
 
             <section>
-                <h2>Enlaces de Interés</h2>
-                <p><a href="https://www.w3.org/XML/" class="boton">Documentación oficial de XML</a></p>
-                <p><a href="https://www.w3schools.com/xml/" class="boton">Tutorial sobre XML en W3Schools</a></p>
+                <p>
+                Existen herramientas como XMLSpy, Oxygen XML Editor y Notepad++ que permiten crear, editar
+                y validar archivos XSD de manera sencilla. Además, lenguajes como Java y .NET incluyen
+                bibliotecas para validar XML con XSD, como javax.xml.validation en Java.
+                </p>
             </section>
         </main>
 
@@ -109,5 +115,4 @@
         </footer>
     </div>
 </body>
-
 </html>
