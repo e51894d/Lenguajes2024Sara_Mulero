@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --button_color: rgb(38, 39, 109);
+    --button_color_hover: rgb(38, 39, 109, 0.85);
+    --bullet_color: rgb(34, 38, 148);
+}
+
+body {
+    font-family: "Montserrat";
+    font-size:larger;
+    background-image: url("https://wallpapers.com/images/hd/4k-firewatch-river-stream-vnjdrwvxeo4f66qt.jpg");
+    background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*esto he tenido que meterlo porque si no la imagen se repetía hacia abajo*/
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.contenedor1{
+ text-align: center;
+}
+
+.content{
+
+    text-align: center;
+    max-width: 800px;
+}
+
+.card{
+    background-color: rgba(234, 231, 231, 0.6);
+    text-align: left;
+    padding: 10px;
+    margin-inline: 10px;
+    border-radius: 8px;
+    height: 180px;
+    align-content: start;
+    position: relative;
+}
+
+.cardBottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+.column {
+    float: left;
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(53, 53, 53);
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    font-weight: 500; 
+    text-align: justify;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+}
+
+li {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+li::marker {
+    color: var(--bullet_color);
+}
+
+.boton {
+    display: inline-block;
+    line-height: 40px;
+    width: 92%;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(220, 211, 211);
+    background-color: var(--button_color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: rgb(6, 34, 59);
+    
+}
