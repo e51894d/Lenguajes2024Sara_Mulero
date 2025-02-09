@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiendaonline SYSTEM "tienda.dtd">
+<tiendaonline>
+
+    <producto>
+        <nombre>Samsung Galaxy Z Flip6</nombre>
+        <categoria>Smartphone</categoria>
+        <precio>800.00</precio>
+        <stock>17</stock>
+    </producto>
+
+    <producto>
+        <nombre>Lavadora Bolero Cecotec</nombre>
+        <categoria>Electronica Hogar</categoria>
+        <precio>339.00</precio>
+        <stock>40</stock>
+    </producto>
+
+    <producto>
+        <nombre>Lavadora LG Serie 700</nombre>
+        <categoria>Electrónica</categoria>
+        <precio>499.00</precio>
+        <stock>25</stock>
+    </producto>
+</tiendaonline>

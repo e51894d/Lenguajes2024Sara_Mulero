@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas SYSTEM "vuelos.dtd">
+
+<reservas>
+    <vuelo>
+
+        <codigo>FI-5577</codigo>
+        <aerolinea>Finnair</aerolinea>
+        <origen>España</origen>
+        <destino>Japón</destino>
+        <fecha>19-02-2025</fecha>
+        <horaSalida>20:00</horaSalida>
+        <horaLlegada>10:45</horaLlegada>
+
+        <pasajeros>
+
+            <pasajero>
+                <nombre>Sara Ml Hr</nombre>
+                <dni>12345678-A</dni>
+                <asiento>7-B</asiento>
+                <clase>Turista</clase>
+            </pasajero>
+
+            <pasajero>
+                <nombre>Andrés P R</nombre>
+                <dni>91011121-B</dni>
+                <asiento>7-A</asiento>
+                <clase>Turista</clase>
+            </pasajero>
+
+        </pasajeros>
+
+    </vuelo>
+</reservas>

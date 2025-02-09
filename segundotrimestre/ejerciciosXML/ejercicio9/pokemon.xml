@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokemon SYSTEM "pokemon.dtd">
+<pokemon>
+    <nombre>Honchkrow</nombre>
+    <pokedex>0430</pokedex>
+    <tipo>Siniestro/Volador</tipo>
+    <genero>Femenino</genero>
+    <estado>
+        <habilidades>Insomnio, Afortunado</habilidades>
+        <nivel>77</nivel>
+        <fuerza>105</fuerza>
+        <evolucion>No tiene</evolucion>
+        <vida>340</vida>
+    </estado>
+</pokemon>

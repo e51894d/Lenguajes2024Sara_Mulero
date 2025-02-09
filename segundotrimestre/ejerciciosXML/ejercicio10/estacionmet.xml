@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE estacionmeteorologica SYSTEM "estacionmet.dtd">
+
+<estacionmeteorologica>
+    <lugar>Córdoba, España</lugar>
+    <fecha>07-02-2027</fecha>
+    <hora>01:13</hora>
+    <temperatura>5°C</temperatura>
+    <viento>13km/h</viento>
+    <lluvia>Si</lluvia>
+</estacionmeteorologica>
