@@ -1,0 +1,19 @@
+.layout {
+    width: 100%;
+  
+    display: grid;
+    grid:
+      "header" auto
+      "main" auto
+      "footer" auto
+      / auto;
+    gap: 10px;
+  
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .header { grid-area: header; }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }

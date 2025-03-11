@@ -73,7 +73,8 @@ a {
 }
 
 a:hover {
-    color: rgb(53, 53, 53);
+    
+    color: rgb(249, 249, 249);
 }
 
 p {
@@ -105,7 +106,7 @@ li::marker {
     font-size: 16px;
     font-weight: 600;
     color: rgb(220, 211, 211);
-    background-color: var(--button_color);
+    background-color: #6e8176f8;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -113,6 +114,6 @@ li::marker {
 }
 
 .boton:hover {
-    background-color: rgb(6, 34, 59);
-    
+    background-color: #4c5f54f8;
+    color: rgb(220, 211, 211);
 }
