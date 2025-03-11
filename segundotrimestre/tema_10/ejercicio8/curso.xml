@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gestion SYSTEM "curso.dtd">
+<gestion>
+    <alumno>
+        <nombre>Itxaso Garmendia Arregui</nombre>
+        <apellidos></apellidos>
+        <curso>1º DAW</curso>
+        <asignaturas>
+            <asignatura>
+                <nombre>Programación</nombre>
+                <trimestre1>5</trimestre1>
+                <trimestre2>6</trimestre2>
+                <trimestre3>6</trimestre3>
+            </asignatura>
+            <asignatura>
+                <nombre>Bases de Datos</nombre>
+                <trimestre1>7</trimestre1>
+                <trimestre2>8</trimestre2>
+                <trimestre3>8</trimestre3>
+            </asignatura>
+            <asignatura>
+                <nombre>Entornos</nombre>
+                <trimestre1>7</trimestre1>
+                <trimestre2>8</trimestre2>
+                <trimestre3>9</trimestre3>
+            </asignatura>
+            <asignatura>
+                <nombre>IPE</nombre>
+                <trimestre1>9</trimestre1>
+                <trimestre2>8</trimestre2>
+                <trimestre3>9.5</trimestre3>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</gestion>

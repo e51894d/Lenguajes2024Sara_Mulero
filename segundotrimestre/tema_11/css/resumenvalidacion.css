@@ -77,10 +77,12 @@ a.boton {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
+    margin-left: 400px;
+   
 }
 
 a.boton:hover {
-    background: #4a5103;
+    background: #889405;
 }
 
 footer {

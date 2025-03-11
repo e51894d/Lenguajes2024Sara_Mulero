@@ -25,7 +25,7 @@
 
     <item>
         <nombre>Helado matcha</nombre>
-        <precio moneda="USD">4.00</precio>
+        <precio moneda="EUR">4.00</precio>
         <tipo>Postre</tipo>
         <categoria>Postre</categoria>
     </item>

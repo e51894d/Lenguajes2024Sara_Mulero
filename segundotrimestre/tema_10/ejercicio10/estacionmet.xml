@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE estacionmeteorologica SYSTEM "estacionmet.dtd">
-
-<estacionmeteorologica>
-    <lugar>Córdoba, España</lugar>
-    <fecha>07-02-2027</fecha>
-    <hora>01:13</hora>
-    <temperatura>5°C</temperatura>
-    <viento>13km/h</viento>
-    <lluvia>Si</lluvia>
-</estacionmeteorologica>
+<EstacionMeteorologica>
+    <ubicacion>Huesca, España</ubicacion>
+    <fecha>2025-03-05</fecha>
+    <hora>14:00</hora>
+    <temperatura>
+        <actual>13</actual>
+        <maxima>16</maxima>
+        <minima>7</minima>
+    </temperatura>
+    <humedad>71</humedad>
+    <presion>1018</presion>
+    <viento>
+        <direccion>noroeste</direccion>
+        <velocidad>11</velocidad>
+    </viento>
+    <lluvia>0.0</lluvia>
+</EstacionMeteorologica>

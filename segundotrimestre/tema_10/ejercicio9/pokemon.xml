@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pokemon SYSTEM "pokemon.dtd">
-<pokemon>
-    <nombre>Honchkrow</nombre>
-    <pokedex>0430</pokedex>
-    <tipo>Siniestro/Volador</tipo>
-    <genero>Femenino</genero>
+<Pokemon>
+    <nombre>Ho-Oh</nombre>
+    <numeroPokedex>250</numeroPokedex>
+    <imagen>hooh.png</imagen>
+    <descripcion>Ho-Oh es un Pokémon legendario de tipo Fuego/Volador que simboliza la esperanza y la eternidad.</descripcion>
+    <tipo>fuego</tipo>
+    <genero>desconocido</genero>
     <estado>
-        <habilidades>Insomnio, Afortunado</habilidades>
-        <nivel>77</nivel>
-        <fuerza>105</fuerza>
-        <evolucion>No tiene</evolucion>
-        <vida>340</vida>
+        <habilidades>Presión, Regeneración</habilidades>
+        <destreza>9</destreza>
+        <nivel>70</nivel>
+        <fuerza>98</fuerza>
+        <faseEvolucion>1</faseEvolucion>
+        <puntosVida>106</puntosVida>
     </estado>
-</pokemon>
+</Pokemon>
