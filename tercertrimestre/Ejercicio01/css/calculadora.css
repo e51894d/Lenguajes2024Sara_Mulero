@@ -4,9 +4,9 @@ body {
     font-family: "Merriweather", Arial, sans-serif;
     font-size:larger;
     background-color: #c6bcbc;
-    background-image: url("./nouage.jpg"); /* Ajusta la ruta aquí */
+    
     background-size: cover; /*para imagen cubra todo el fondo*/
-    background-position: center; /*entrar la imagen */
+    background-position: center; /*ccentrar la imagen */
     margin: 0;
     display: flex;
     justify-content: center;
