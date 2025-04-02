@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+</head>
+<body>
+    <!-- Campos de entrada para los números -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón para ejecutar el cálculo -->
+    <button id="calcularBtn">Calcular</button><br>
+    
+    <!-- Áreas donde se mostrarán los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Agrega un event listener al botón para ejecutar la función cuando se haga clic
+        document.getElementById("calcularBtn").addEventListener("click", () => {
+            // Obtener los valores de los inputs y convertirlos en números
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
+            
+            // Calcular la suma y el producto
+            const suma = numero1 + numero2;
+            const producto = numero1 * numero2;
+            
+            // Determinar el número mayor o si son iguales
+            const mayor = numero1 === numero2 ? "Los números son iguales" : Math.max(numero1, numero2);
+            
+            // Mostrar los resultados en el HTML
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        });
+    </script>
+</body>
+</html>

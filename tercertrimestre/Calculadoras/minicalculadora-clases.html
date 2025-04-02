@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Clases</title>
+</head>
+<body>
+    <!-- Campos de entrada para los números -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón para ejecutar el cálculo -->
+    <button id="calcularBtn">Calcular</button><br>
+    
+    <!-- Áreas donde se mostrarán los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Definimos una clase para encapsular la funcionalidad de la calculadora
+        class Calculadora {
+            constructor(numero1Id, numero2Id, sumaId, productoId, mayorId) {
+                // Obtenemos los elementos del DOM por su ID
+                this.numero1Input = document.getElementById(numero1Id);
+                this.numero2Input = document.getElementById(numero2Id);
+                this.sumaOutput = document.getElementById(sumaId);
+                this.productoOutput = document.getElementById(productoId);
+                this.mayorOutput = document.getElementById(mayorId);
+            }
+            
+            // Método para obtener el valor de un input y convertirlo en número
+            obtenerNumero(input) {
+                return Number(input.value);
+            }
+            
+            // Método principal que ejecuta los cálculos
+            calcular() {
+                const numero1 = this.obtenerNumero(this.numero1Input);
+                const numero2 = this.obtenerNumero(this.numero2Input);
+                
+                // Llama a la función que muestra los resultados
+                this.mostrarResultados(numero1, numero2);
+            }
+            
+            // Método que actualiza el DOM con los resultados
+            mostrarResultados(numero1, numero2) {
+                this.sumaOutput.textContent = numero1 + numero2; // Suma los números
+                this.productoOutput.textContent = numero1 * numero2; // Multiplica los números
+                
+                // Determina el número mayor y lo muestra
+                this.mayorOutput.textContent = numero1 === numero2 ? "Los números son iguales" : Math.max(numero1, numero2);
+            }
+        }
+        
+        // Se crea una instancia de la calculadora, pasando los IDs de los elementos HTML
+        const calculadora = new Calculadora("numero1", "numero2", "suma", "producto", "mayor");
+        
+        // Agregamos un event listener al botón para ejecutar el cálculo al hacer clic
+        document.getElementById("calcularBtn").addEventListener("click", () => calculadora.calcular());
+    </script>
+</body>
+</html>
