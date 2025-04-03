@@ -9,41 +9,43 @@
     <!-- Campos de entrada para los números -->
     <label>Primer número: <input type="number" id="numero1"></label><br>
     <label>Segundo número: <input type="number" id="numero2"></label><br>
-    
-    <!-- Botón que llama a la función calcular al hacer clic -->
-    <button onclick="calcular()">Calcular</button><br>
-    
+
+    <!-- Botón para ejecutar los cálculos -->
+    <button id="calcularBtn">Calcular</button><br>
+
     <!-- Áreas donde se mostrarán los resultados -->
     <div>La suma es: <span id="suma"></span></div>
     <div>El producto es: <span id="producto"></span></div>
     <div>El número mayor es: <span id="mayor"></span></div>
 
     <script>
-      // Función que realiza los cálculos y actualiza el DOM
-      function calcular() {
-        // Obtener los valores de los inputs y convertirlos en números
-        const numero1 = Number(document.getElementById("numero1").value);
-        const numero2 = Number(document.getElementById("numero2").value);
+        // Función para obtener el valor numérico de un input
+        const getNumber = (id) => Number(document.getElementById(id).value);
+
+        // Función para establecer el texto de un elemento
+        const setText = (id, value) => document.getElementById(id).textContent = value;
         
-        // Calcular la suma y el producto
-        const suma = numero1 + numero2;
-        const producto = numero1 * numero2;
-        let mayor;
-
-        // Determinar el número mayor o si son iguales
-        if (numero1 > numero2) {
-          mayor = numero1;
-        } else if (numero2 > numero1) {
-          mayor = numero2;
-        } else {
-          mayor = "Los números son iguales";
-        }
-
-        // Mostrar los resultados en el HTML
-        document.getElementById("suma").textContent = suma;
-        document.getElementById("producto").textContent = producto;
-        document.getElementById("mayor").textContent = mayor;
-      }
+        // Función principal que realiza los cálculos
+        const calcular = () => {
+            // Obtiene los valores de los inputs y los almacena en un array
+            const [numero1, numero2] = [getNumber("numero1"), getNumber("numero2")];
+            
+            // Objeto con las operaciones matemáticas
+            const operaciones = {
+                suma: (a, b) => a + b, // Calcula la suma
+                producto: (a, b) => a * b, // Calcula el producto
+                mayor: (a, b) => (a === b ? "Los números son iguales" : Math.max(a, b)) // Determina el mayor o si son iguales
+            };
+            
+            // Actualiza los resultados en la página
+            setText("suma", operaciones.suma(numero1, numero2));
+            setText("producto", operaciones.producto(numero1, numero2));
+            setText("mayor", operaciones.mayor(numero1, numero2));
+        };
+        
+        // Agrega el evento de clic al botón para ejecutar la función calcular()
+        document.getElementById("calcularBtn").addEventListener("click", calcular);
     </script>
 </body>
 </html>
+
