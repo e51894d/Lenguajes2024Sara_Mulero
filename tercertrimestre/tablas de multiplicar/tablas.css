@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #e2a8c4;
-    color: #db6881;
+    background-color: #6d0101;
+    color: #fff9f1;
 }
 
 button {
-    background-color: #ff66b2;
-    color: white;
+    background-color: #4e0606;
+    color: rgb(243, 242, 242);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -16,7 +16,7 @@ button {
 }
 
 button:hover {
-    background-color: #e60073;
+    background-color: #e6000c;
 }
 
 #resultado {
@@ -37,4 +37,5 @@ button:hover {
     text-align: left;
     min-width: 120px;
     display: inline-block;
+    color: #6d0101;
 }
