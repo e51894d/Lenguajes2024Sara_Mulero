@@ -10,12 +10,12 @@ function agregarNumero(num) {
   }
 }
 
-//Limpiar la pantalla//
+/*borrar pantalla*/
 function limpiar() {
   resultado.value = "";
 }
 
-//Borrar el último carácter//
+/*borrar carácter*/
 function borrar() {
   resultado.value = resultado.value.slice(0, -1);
 }
@@ -42,7 +42,7 @@ function operar(op) {
         break;
 
       default:
-        resultado.value += op; //Para operaciones normales (+, -, *, /)//
+        resultado.value += op; /*para operaciones normales (+, -, *, /)*/
         break;
     }
   } catch (error) {
@@ -50,7 +50,7 @@ function operar(op) {
   }
 }
 
-//Convertir a binario o hexadecimal//
+/*convertir a binario o hexadecimal*/
 function calcular(tipo) {
   try {
     let valor = eval(resultado.value);
@@ -60,7 +60,7 @@ function calcular(tipo) {
     } else if (tipo === "hex") {
       resultado.value = valor.toString(16).toUpperCase();
     } else {
-      resultado.value = valor; //Resultado normal//
+      resultado.value = valor; /*resultado normal*/
     }
   } catch (error) {
     resultado.value = "Error";
