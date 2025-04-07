@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Mulero Herrero">
+    <title>Ejercicios del Tercer Trimestre</title>
+    <link rel="stylesheet" href="./cronometro.css">
+</head>
+<body>
+  <header>
+    <h1>Cronómetro JavaScript</h1>
+  </header>
+
+  <main>
+    <div class="tiempo">
+      <div>
+        <p>Minutos</p>
+        <span id="minutos">00</span>
+      </div>
+      <div>
+        <p>Segundos</p>
+        <span id="segundos">00</span>
+      </div>
+      <div>
+        <p>Milisegundos</p>
+        <span id="milisegundos">000</span>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button onclick="iniciar()">Iniciar</button>
+      <button onclick="detener()">Detener</button>
+      <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Autor</p>
+  </footer>
+
+  <script src="./cro.js"></script>
+</body>
+</html>
