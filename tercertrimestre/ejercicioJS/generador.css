@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor .color {
+    margin: 12px;
+    padding: 7px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0px 30px 0px rgb(207, 206, 206);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+.contenedor .color:active {
+    transform: scale(0.95);
+}
+
+.color .caja-color {
+    width: 185px;
+    height: 188px;
+    border-radius: 10px;
+}
+
+.color:hover .caja-color {
+    filter: brightness(107%);
+}
+
+.color .valor-hex {
+    display: block;
+    color: #444;
+    user-select: none;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 12px 0 8px;
+    text-transform: uppercase;
+}
+
+.boton-recargar {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: green;
+    padding: 13px 20px;
+    border: none;
+    transform: translateX(-50%);
+    box-shadow: 0 0px 30px 0px grey;
+    transition: all 0.3s ease;
+}
+
+.boton-recargar:hover {
+    background: rgb(4, 95, 4);
+}
+
+.mensaje-copiado {
+    margin: 10px;
+    color: crimson;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedor-busqueda {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.entrada-busqueda {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-shadow: 0 0px 10px 0px #b3b2b2;
+}
+
+.entrada-busqueda:hover {
+    border-color: #007bff;
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        margin: 10px;
+    }
+
+    .contenedor .color {
+        margin: 8px;
+        padding: 5px;
+        width: calc(100% / 2 - 20px);
+    }
+
+    .color .caja-color {
+        width: 100%;
+        height: 148px;
+    }
+
+    .color .valor-hex {
+        font-size: 1.05rem;
+    }
+
+    .boton-recargar {
+        font-size: 1rem;
+    }
+}
