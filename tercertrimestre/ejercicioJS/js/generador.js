@@ -1,3 +1,7 @@
+//"DOMContentLoaded": evento que se activa cuando todo el HTML ha sido cargado (sin esperar imágenes).
+//.addEventListener(): para ejecutar un código cuando quiero que ocurra un evento
+//getElementById(...): obtenerr elementos html con un id specifico
+
 document.addEventListener("DOMContentLoaded", function () {
 	
     const listaColores = document.getElementById('listaColores');
@@ -10,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const arregloColores = [];
 
 		for (let i = 0; i < maxColores; i++) {
+			
 			const colorHexAleatorio = '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
 			arregloColores.push(colorHexAleatorio);
 		}
@@ -18,25 +23,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	function mostrarListaColores(arregloColores) {
+		
 		listaColores.innerHTML = '';
 
 		arregloColores.forEach((valorHex) => {
+			
 			const elemento = document.createElement('ul');
+			
 			elemento.classList.add('color');
 			elemento.innerHTML = `
 				<div class="caja-color" style="background: ${valorHex}"></div>
 				<span class="valor-hex">${valorHex}</span>
 			`;
+			
 			elemento.addEventListener('click', () => copiarColorAlPortapapeles(valorHex));
 			listaColores.appendChild(elemento);
 		});
 	}
 
-	function copiarColorAlPortapapeles(valorHex) {
-		navigator.clipboard.writeText(valorHex)
-			.then(() => alert(`¡Color ${valorHex} copiado al portapapeles!`))
-			.catch(() => alert('¡Error al copiar el color!'));
-	}
-
 	botonRecargar.addEventListener('click', generarPaletaColores);
 });
+
