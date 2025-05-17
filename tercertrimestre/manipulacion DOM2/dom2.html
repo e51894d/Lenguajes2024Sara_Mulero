@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modificar Clases del DOM</title>
+  <meta name="author" content="Sara Mulero Herrero">
+  <link rel="stylesheet" href="./dom2.css" />
+</head>
+<body>
+
+  <header>Modificar clases del DOM</header>
+
+  <div class="main">
+    <div class="buttons-container">
+      <button onclick="card.classList.toggle('color-fondo')">Color fondo</button>
+      <button onclick="card.classList.toggle('bordes-punteados')">Bordes punteados</button>
+      <button onclick="card.classList.toggle('bordes-redondeados')">Bordes redondeados</button>
+      <button onclick="card.classList.remove('desaparecer')">Aparecer</button>
+      <button onclick="card.classList.add('desaparecer')">Desaparecer</button>
+      <button onclick="card.classList.add('tamano-grande'); card.classList.remove('tamano-peque')">Tamaño grande</button>
+      <button onclick="card.classList.add('tamano-peque'); card.classList.remove('tamano-grande')">Tamaño pequeño</button>
+    </div>
+
+    <div id="card" class="card">¡Modifica la tarjeta!</div>
+  </div>
+
+  <footer>saramlhr</footer>
+
+  <script src="./dom2.js"></script>
+</body>
+</html>123456789
