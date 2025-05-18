@@ -6,33 +6,50 @@
     --bullet_color: rgb(34, 38, 148);
 }
 
+html { /* Aseguramos que html también tenga altura */
+    height: 100%;
+}
+
 body {
     font-family: "Montserrat";
     font-size:larger;
     background-image: url("./images/elijah-hiett-f0huI7_HjWw-unsplash.jpg");
-    background-color: rgba(255,255,255,0.3); /* el ultimo numero es para la opcacidad general de debajo texto, opaca todo el fondo, observar cambios para ponerlo dentro de container*/
+    background-color: rgb(33, 32, 32);
     background-blend-mode: lighten;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /*esto he tenido que meterlo porque si no la imagen se repetía hacia abajo*/
+    background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    height: 100%;
+    display: flex; /* Clave para el layout */
+    flex-direction: column; /* Apila los hijos directos verticalmente */
+    min-height: 100%; /* Ocupa al menos toda la altura de la ventana */
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /* justify-content: center;  Quitado */
+    /* padding-top: 50px; Movido o gestionado por .content */
+    /* padding-bottom: 100px; Movido o gestionado por .content o flex */
 }
+
+.h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;}
 
 .contenedor1{
  text-align: center;
+ 
 }
 
 .content{
-
+    flex-grow: 1; /* Clave para que este div ocupe el espacio sobrante */
     text-align: center;
     max-width: 800px;
+    margin-left: auto; /* Centra .content si tiene max-width */
+    margin-right: auto; /* Centra .content si tiene max-width */
+    padding-top: 50px; /* Restaura el padding que estaba en body */
+    padding-bottom: 20px; /* Espacio antes del footer */
+    width: 100%; /* Para que el padding funcione como se espera con max-width y centrado */
+    box-sizing: border-box; /* Importante si hay padding y width 100% */
 }
 
 .card{
@@ -99,6 +116,17 @@ li::marker {
     color: var(--bullet_color);
 }
 
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0; 
+    width: 100%;
+    box-sizing: border-box;
+    clear: both;
+    margin-top: 20px;
+}
+
 .boton {
     display: inline-block;
     line-height: 40px;
@@ -111,9 +139,16 @@ li::marker {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    margin-top: 20px;
 }
 
 .boton:hover {
     background-color: #4c5f54f8;
     color: rgb(220, 211, 211);
+}
+
+
+.calculadoras-page .button,
+.calculadoras-page footer {
+    margin-top: 20px;
 }
