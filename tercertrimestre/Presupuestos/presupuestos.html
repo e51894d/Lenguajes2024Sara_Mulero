@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Mulero Herrero">
+    <title>Presupuestos para Cajas</title>
+    <link rel="stylesheet" href="./presupuestos.css">
+</head>
+<body>
+    <header>
+        <h1>Programa de Presupuestos para Cajas Personalizadas</h1>
+    </header>
+
+    <main class="container">
+        <div class="column">
+            <div class="panel">
+                <h2>Presupuestos para cajas</h2>
+                <div class="form-sections-container">
+                    <section id="calculo" class="form-section">
+                        <h3>Sección de Cálculo</h3>
+                        <label for="ancho">Ancho (cm):</label>
+                        <input type="number" id="ancho" value="20">
+
+                        <label for="alto">Alto (cm):</label>
+                        <input type="number" id="alto" value="30">
+
+                        <label for="largo">Largo (cm):</label>
+                        <input type="number" id="largo" value="30">
+
+                        <label for="material">Material:</label>
+                        <select id="material">
+                            <option value="plastico">Plástico</option>
+                            <option value="carton">Cartón</option>
+                            <option value="madera">Madera</option>
+                        </select>
+                        <button id="btnCalcular">Calcular</button>
+                    </section>
+
+                    <section id="configuracion" class="form-section">
+                        <h3>Sección de Configuración</h3>
+                        <label for="precioBase">Precio base por m²:</label>
+                        <input type="number" id="precioBase" value="1" step="0.01">
+
+                        <label for="incrementoPlastico">Incremento (%) para Plástico:</label>
+                        <input type="number" id="incrementoPlastico" value="20">
+
+                        <label for="incrementoCarton">Incremento (%) para Cartón:</label>
+                        <input type="number" id="incrementoCarton" value="10">
+
+                        <label for="incrementoMadera">Incremento (%) para Madera:</label>
+                        <input type="number" id="incrementoMadera" value="50">
+
+                        <label for="iva">IVA (%):</label>
+                        <input type="number" id="iva" value="10">
+                    </section>
+                </div>
+            </div>
+
+            <div class="panel" id="resultadosPanel">
+                <h3>Sección de Resultados</h3>
+                <p id="resDimensiones">Dimensiones de la caja: --</p>
+                <p id="resVolumen">Volumen en cm³: --</p>
+                <p id="resSuperficie">Superficie en cm²: --</p>
+                <p id="resMaterial">Material seleccionado: --</p>
+                <p id="resPrecioSinIva">Precio sin IVA: --</p>
+                <p id="resPrecioConIva">Precio con IVA: --</p>
+                <div id="mensajesError" class="error-messages"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>saramlhr</p>
+    </footer>
+
+    <script src="./presupuestos.js"></script>
+</body>
+</html>

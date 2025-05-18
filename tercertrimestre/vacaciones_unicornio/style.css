@@ -1,0 +1,153 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #e9f5f9; 
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ea94cb; 
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+main { 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+
+#area-principal {
+    background-color: #ffffff; 
+    padding: 25px; 
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 1300px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#mensaje-vacaciones {
+    font-size: 1.6em; 
+    color: #222324; 
+    margin-bottom: 15px;
+    min-height: 30px; /*Para evitar saltos cuando el unicornio no está*/
+}
+
+#unicornio-container {
+    min-height: 120px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /*Para centrarr el unicornio si se mueve aquí */
+}
+
+#unicornio {
+    width: 100px; 
+    height: auto;
+    cursor: grab;
+    transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+}
+
+#unicornio.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+#destinos-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 25px;
+    width: 95%; 
+    max-width: 1500px; 
+    margin: 20px auto;
+}
+
+.destino {
+    width: 250px; 
+    height: 250px; 
+    border: 3px dashed #e78fce;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.3s, border-color 0.3s;
+    position: relative; /*Para posicionar el unicornio dentr*/
+    overflow: hidden; /*Para que la imagen de fondo no se salga*/
+    font-size: 0.9em;
+}
+
+.destino img {
+    max-width: 100%;
+    max-height: 85%; 
+    object-fit: cover; /*Para que la imagen cubra bien sin deformarse*/
+    border-radius: 6px;
+    pointer-events: none; /*Evita que la imagen interfiera con el drop*/
+}
+
+.destino span {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d371a5;
+    pointer-events: none; /*Evita que el texto interfiera con el drop*/
+}
+
+.destino.drag-over {
+    background-color: #cce5ff; 
+    border-color: #eb7bc4;
+}
+
+.destino #unicornio {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+footer {
+    background-color: #ea94cb;
+    color: rgb(37, 36, 36);
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+#btn-reset-unicornio {
+    background-color: #ffc107; 
+    color: #212529;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 15px; 
+    transition: background-color 0.3s ease;
+}
+
+#btn-reset-unicornio:hover {
+    background-color: #e0a800;
+} 
