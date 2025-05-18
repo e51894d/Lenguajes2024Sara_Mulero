@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Actualizar mensaje
                 const nombreDestino = destino.dataset.nombre || 'un lugar desconocido';
-                mensajeVacaciones.textContent = `¡El unicornio se fue de vacaciones a ${nombreDestino}!`;
+                mensajeVacaciones.textContent = `¡El unicornio se fue de vacaciones a:  ${nombreDestino}!`;
             }
         });
     });

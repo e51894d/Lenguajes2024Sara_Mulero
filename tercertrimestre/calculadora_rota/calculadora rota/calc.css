@@ -1,3 +1,24 @@
+html {
+  min-height: 100vh; /*aaltura mínima */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; 
+  font-family: sans-serif; 
+  align-items: center;
+}
+
+main {
+  flex-grow: 1; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
 .calculadora {
   width: 7cm;
   padding: 10px;
@@ -6,6 +27,15 @@
   box-shadow: 2px 2px 5px #333;
   background-color: #d9d9d9;
   border-radius: 5px;
+}
+
+header, footer {
+  background-color:  #e87aad;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.3rem;
 }
 
 .pantalla {
@@ -57,4 +87,25 @@ button {
 
 button:active {
   background-color: #888;
+}
+
+.button {
+  display: block; 
+  width: fit-content; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 10px 25px; 
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color:rgb(238, 152, 204);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background-color:  #e87aad;
 }

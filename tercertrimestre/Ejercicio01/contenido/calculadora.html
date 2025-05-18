@@ -1,19 +1,37 @@
-<body>
-  <!-- Etiqueta de entrada para el primer número -->
-  <label>Primer número: <input type="number" id="numero1"></label><br>
-  
-  <!-- Etiqueta de entrada para el segundo número -->
-  <label>Segundo número: <input type="number" id="numero2"></label><br>
-  
-  <!-- Botón que al hacer clic ejecuta la función "calcular()" -->
-  <button onclick="calcular()">Calcular</button><br>
-  
-  <!-- Secciones donde se mostrarán los resultados -->
-  <div>La suma es: <span id="suma"></span></div>
-  <div>El producto es: <span id="producto"></span></div>
-  <div>El número mayor es: <span id="mayor"></span></div>
+<!DOCTYPE html>
+<html lang="es">
 
-  <script>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Mulero Herrero">
+    <title>index_calculadora</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+
+</head>
+<body>
+  <header>
+    <h1>Calculadora Básica</h1>
+  </header>
+  <div class="main-content">
+    <div class="calculator">
+      <!-- Etiqueta de entrada para el primer número -->
+      <label>Primer número: <input type="number" id="numero1"></label><br>
+      
+      <!-- Etiqueta de entrada para el segundo número -->
+      <label>Segundo número: <input type="number" id="numero2"></label><br>
+      
+      <!-- Botón que al hacer clic ejecuta la función "calcular()" -->
+      <button onclick="calcular()">Calcular</button><br>
+      
+      <!-- Secciones donde se mostrarán los resultados -->
+      <div>La suma es: <span id="suma"></span></div>
+      <div>El producto es: <span id="producto"></span></div>
+      <div>El número mayor es: <span id="mayor"></span></div>
+    </div>
+
+    <script>
     function calcular() {
       // Obtiene los valores ingresados por el usuario y los convierte a tipo numérico
       const numero1 = Number(document.getElementById("numero1").value);
@@ -38,6 +56,11 @@
       document.getElementById("producto").textContent = producto;
       document.getElementById("mayor").textContent = mayor;
     }
-  </script>
+    </script>
+    <a class="button" href="/index.html">Volver</a>
+  </div>
+  <footer>
+      <p>saramlhr</p>
+  </footer>
 </body>
 

@@ -1,39 +1,168 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 body {
-    font-family: "Merriweather";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f0f0f0;
+    background:linear-gradient( #bde0fe, #ffc8dd );
+    font-family: "Merriweather";
 }
 
-
 header {
-    background-color: #007bff;
+    background-color: #f48cce;
     color: white;
     padding: 15px;
     font-size: 24px;
+    text-align: center;
+    width: 100%;
+    font-family: "Merriweather";
+    box-sizing: border-box;
 }
 
-
-.container {
+.main-content {
+    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
+}
+
+.calculator {
+    width: 450px;
+    height: 550px;
+    background: linear-gradient(#ffc8dd , #bde0fe);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid rgba(250, 250, 250, 0.795);
+    border-left: 2px solid rgba(250, 250, 250, 0.733);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: "Merriweather";
+}
+
+.display {
+    background-color: #fff4f8;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    font-size: 30px;
+    color: #cdb4db;
+    margin: 0 14px 10px 14px;
+    padding: 10px 12px;
+    font-family: "Merriweather";
+}
+
+.buttonPad {
+    display: flex;
+    flex-direction: column;
+    font-family: "Merriweather";
+}
+
+.buttonLine {
+    margin: 10px;
+    display: flex;
+    font-family: "Merriweather";
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color:#5a5a5a;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-family: "Merriweather";
+}
+
+.buttonPad button {
+    margin: 0px 7px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color:#ffffff;
+    border-radius: 50%;
+    border:none;
+    background-color: #cdb4db;
+    box-shadow: 0px 5px 0px 0px #b157e68e;
+    transition-duration: 0.3s;
+    font-family: 'Concert One', cursive;
+    font-family: "Merriweather";
+}
+
+.buttonPad button:hover {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.buttonPad button:active {
+    box-shadow: 0px 0px;
+}
+
+.operator:hover {
+    box-shadow: 0px 0px 0px 0px #b157e68e;
+}
+
+.number:hover {
+    box-shadow: 0px 0px 0px 0px #b157e68e;
+}
+
+.num0 {
+    flex: 1;
+    border-radius: 10px;
+}
+
+.num0:hover {
+    box-shadow: 0px 0px 0px 0px #b157e68e;
+}
+
+#ac {
+    width: 50%;
+    background-color: #ffafcc;
+    box-shadow: 0px 5px 0px 0px #f893b8;
+    color:#fff;
+    border-radius: 10px;
+}
+
+#ac:hover {
+    box-shadow: 0px 0px 0px 0px #f893b8;
+}
+
+#enter {
+    width: 50%;
+    border-radius: 10px;
+    background-color: #a2d2ff;
+    box-shadow: 0px 5px 0px 0px #76b9f8;
+}
+
+#enter:hover {
+    box-shadow: 0px 0px 0px 0px #76b9f8;
 }
 
 .button {
     background: white;
-    padding: 15px 30px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 18px;
-    color: #007bff;
+    font-size: 16px;
+    color: #f48cce;
     font-weight: bold;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Merriweather";
 }
 
 .button:hover {
@@ -41,10 +170,31 @@ header {
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #f48cce;
     color: white;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
     width: 100%;
+    font-family: "Merriweather";
+    box-sizing: border-box;
+}
+
+.calculator * {
+    box-sizing: border-box;
+    font-family: "Merriweather";
+}
+
+.calculator label, .calculator input, .calculator div {
+    font-family: "Merriweather";
+    color: #333;
+    margin-bottom: 5px;
+}
+.calculator input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
 }

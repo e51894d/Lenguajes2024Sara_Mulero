@@ -8,42 +8,55 @@
     <link rel="stylesheet" href="calc.css">
   </head>
   <body>
-    <div class="calculadora">
-      <div class="pantalla">
-        <input type="text" id="resultado" >
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+
+    <main>
+      <div class="calculadora">
+        <div class="pantalla">
+          <input type="text" id="resultado" >
+        </div>
+        <div class="teclado">
+          <button onclick="limpiar()">C</button>
+          <button onclick="borrar()">CE</button>
+          <button onclick="operar('/')">÷</button>
+          <button onclick="operar('*')">x</button>
+
+          <button onclick="agregarNumero('7')">7</button>
+          <button onclick="agregarNumero('8')">8</button>
+          <button onclick="agregarNumero('9')">9</button>
+          <button onclick="agregarNumero('-')">-</button>
+
+          <button onclick="agregarNumero('4')">4</button>
+          <button onclick="agregarNumero('5')">5</button>
+          <button onclick="agregarNumero('6')">6</button>
+          <button onclick="agregarNumero('+')">+</button>
+
+          <button onclick="agregarNumero('1')">1</button>
+          <button onclick="agregarNumero('2')">2</button>
+          <button onclick="agregarNumero('3')">3</button>
+          <button onclick="operar('fraccion')">1/x</button>
+
+          <button onclick="agregarNumero('0')">0</button>
+          <button onclick="agregarNumero('punto')">.</button>
+          <button onclick="operar('raiz')">√</button>
+          <button onclick="operar('raiz')">x²</button>
+          
+          <button onclick="calcular('bin')">Bin</button>
+          <button onclick="calcular('hex')">Hex</button>
+          <button onclick="calcular('resultado')" class="resultado">=</button>
+
+        </div>
       </div>
-      <div class="teclado">
-        <button onclick="limpiar()">C</button>
-        <button onclick="borrar()">CE</button>
-        <button onclick="operar('/')">÷</button>
-        <button onclick="operar('*')">x</button>
+    </main>
+    
+    <a class="button" href="../../../index.html">Volver</a>
+    
+    <footer>
+      <p>saramlhr</p>
+    </footer>
 
-        <button onclick="agregarNumero('7')">7</button>
-        <button onclick="agregarNumero('8')">8</button>
-        <button onclick="agregarNumero('9')">9</button>
-        <button onclick="agregarNumero('-')">-</button>
-
-        <button onclick="agregarNumero('4')">4</button>
-        <button onclick="agregarNumero('5')">5</button>
-        <button onclick="agregarNumero('6')">6</button>
-        <button onclick="agregarNumero('+')">+</button>
-
-        <button onclick="agregarNumero('1')">1</button>
-        <button onclick="agregarNumero('2')">2</button>
-        <button onclick="agregarNumero('3')">3</button>
-        <button onclick="operar('fraccion')">1/x</button>
-
-        <button onclick="agregarNumero('0')">0</button>
-        <button onclick="agregarNumero('punto')">.</button>
-        <button onclick="operar('raiz')">√</button>
-        <button onclick="operar('raiz')">x²</button>
-        
-        <button onclick="calcular('bin')">Bin</button>
-        <button onclick="calcular('hex')">Hex</button>
-        <button onclick="calcular('resultado')" class="resultado">=</button>
-
-      </div>
-    </div>
     <script src="calc.js"></script>
   </body>
 </html>

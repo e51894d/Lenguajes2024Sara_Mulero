@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Serif", serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header,
+footer {
+    background-color: #e50361;
+    color: rgb(241, 240, 240);
+    text-align: center;
+    font-family: "Noto Serif", serif;
+    font-size: large;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keyBox {
+    width: 200px;
+    height: 200px;
+    border: solid 2px  #e50387;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #e50361;
+    font-family: "Noto Serif", serif;
+}
+
+.tiempo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2.5rem;
+    color: rgb(209, 2, 106);
+    font-weight: bold;
+
+}
+
+.tiempo p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.botones {
+    margin-top: 30px;
+    font-family: 'Noto', Serif;
+}
+
+button {
+    background-color: rgb(226, 161, 199);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #d80367;
+    font-family: 'Noto', Serif;
+}
+
+#keyBox {
+    width: 200px;
+    height: 200px;
+    border: solid 2px #e50387;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #e50361;
+    font-family: "Noto Serif", serif;
+}
+
+.button {
+    display: block; 
+    width: fit-content; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 10px 25px; 
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color:#e50361;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color:  #e87aad;
+  }

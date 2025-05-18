@@ -3,158 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Mulero Herrero">
     <title>Calculadora con Clases</title>
-    <style>
-        .calculator {
-            width: 350px;
-            height: auto; /* Ajustado para contenido dinámico */
-            background: linear-gradient(#ffc8dd , #bde0fe);
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            border-top: 2px solid rgba(250, 250, 250, 0.795);
-            border-left: 2px solid rgba(250, 250, 250, 0.733);
-            box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15);
-            padding: 20px; /* Añadido padding para mejor espaciado */
-            border-radius: 10px; /* Añadido para consistencia con otros elementos */
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            background:linear-gradient( #bde0fe, #ffc8dd );
-            font-family: 'Concert One', cursive; /* Movido aquí desde * para que sea el default */
-        }
-        
-        .display{
-            background-color: #fff4f8;
-            display: flex;
-            flex-direction: column; /* Ajustado para mostrar resultados verticalmente */
-            align-items: flex-start; /* Alinea el texto a la izquierda */
-            justify-content: center; /* Centra el contenido verticalmente */
-            width: calc(100% - 28px); /* Ajusta el ancho al contenedor padre menos el padding */
-            min-height: 100px; /* Altura mínima */
-            font-size: 20px; /* Ajustado para mejor legibilidad */
-            color: #cdb4db;
-            margin: 0 14px 10px 14px;
-            padding: 10px 12px;
-            border-radius: 10px; /* Asegura bordes redondeados */
-        }
-
-        .buttonPad{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .buttonLine{
-            margin: 10px;
-            display: flex;
-        }
-
-        button { /* Estilo general para botones */
-            margin: 5px 7px; /* Ajustado margen */
-            width: auto; /* Ancho automático basado en contenido */
-            padding: 15px 20px; /* Padding para botones más grandes */
-            height: 60px;
-            font-size: 20px; /* Ajustado tamaño de fuente */
-            color:#ffffff;
-            border-radius: 10px; /* Consistencia en bordes redondeados */
-            border:none;
-            background-color: #cdb4db;
-            box-shadow: 0px 5px 0px 0px #b157e68e;
-            transition-duration: 0.3s;
-            cursor: pointer; /* Añadido para indicar que es clickeable */
-        }
-
-        button:hover{
-            margin-top: 6px; /* Ajustado para efecto visual */
-            margin-bottom: 4px; /* Ajustado para efecto visual */
-            box-shadow: 0px 2px 0px 0px #b157e68e; /* Sombra reducida al pasar el mouse */
-        }
-
-        button:active {
-            box-shadow: 0px 0px;
-            margin-top: 10px; /* Ajustado para efecto visual */
-            margin-bottom: 0px; /* Ajustado para efecto visual */
-        }
-
-        .operator:hover{
-            box-shadow: 0px 0px 0px 0px #b157e68e;
-        }
-
-        .number:hover{
-            box-shadow: 0px 0px 0px 0px #b157e68e;
-        }
-
-        .num0{
-            flex: 1;
-            border-radius: 10px;
-        }
-
-        .num0:hover{
-            box-shadow: 0px 0px 0px 0px #b157e68e;
-        }
-
-        #ac {
-            width: 50%;
-            background-color: #ffafcc;
-            box-shadow: 0px 5px 0px 0px #f893b8;
-            color:#fff;
-            border-radius: 10px;
-        }
-        #ac:hover{
-           box-shadow: 0px 0px 0px 0px #f893b8;
-        }
-        #enter {
-            width: 50%;
-            border-radius: 10px;
-            background-color: #a2d2ff;
-            box-shadow: 0px 5px 0px 0px #76b9f8;
-        }
-        #enter:hover {
-          box-shadow: 0px 0px 0px 0px #76b9f8;
-        }
-
-        * {
-            box-sizing: border-box;
-            /* border-radius: 10px; Ya se maneja en elementos específicos */
-            /* font-family: 'Concert One', cursive; Movido a body */
-        }
-
-        /* Estilos adicionales para los inputs y labels */
-        label {
-            margin: 5px 0;
-            color: #555; /* Color de texto para labels */
-            font-size: 16px;
-        }
-        input[type="number"] {
-            padding: 10px;
-            margin: 5px 0 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            width: calc(100% - 22px); /* Ajusta el ancho al contenedor padre */
-        }
-        #calcularBtn { /* Estilo específico para el botón calcular si es necesario diferenciarlo */
-            background-color: #a2d2ff; /* Color similar a #enter */
-            box-shadow: 0px 5px 0px 0px #76b9f8;
-        }
-        #calcularBtn:hover {
-          box-shadow: 0px 2px 0px 0px #76b9f8; /* Sombra reducida al pasar el mouse */
-        }
-        #calcularBtn:active {
-            box-shadow: 0px 0px;
-        }
-         .result-item { /* Clase para cada item de resultado */
-            margin: 5px 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style/clasica.css">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> <!-- Importar la fuente -->
 </head>
 <body>
@@ -221,5 +72,9 @@
         //Se agrega un evento al botón para ejecutar el cálculo cuando se hace clic
         document.getElementById("calcularBtn").addEventListener("click", () => calculadora.calcular());
     </script>
+    <a class="button" href="/index.html">Volver</a>
+    <footer>
+        <p>saramlhr</p>
+    </footer>
 </body>
 </html>

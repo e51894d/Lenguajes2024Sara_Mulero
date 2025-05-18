@@ -59,3 +59,20 @@ button:hover {
   margin-top: 20px;
   line-height: 1.6;
 }
+
+.button {
+   
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color:rgb(238, 152, 204);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  background-color:  #e87aad;
+}
