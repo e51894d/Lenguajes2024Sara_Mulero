@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #232222;
@@ -162,3 +163,24 @@ footer {
         flex-direction: column;
     }
 }
+
+.button {
+    display: block; 
+    width: fit-content; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 10px 25px; 
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(162, 152, 238);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color:  #a180c4;
+  }

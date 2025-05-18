@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
-    background-color: #6d0101;
-    color: #fff9f1;
+    background-color: #f9e7e7;
+    color: #232222;
 }
 
 button {
-    background-color: #4e0606;
-    color: rgb(243, 242, 242);
+    background-color: #ddbdcd;
+    color: rgb(36, 34, 34);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 button:hover {
-    background-color: #e6000c;
+    background-color: #2e2d2d;
 }
 
 #resultado {
@@ -37,5 +40,26 @@ button:hover {
     text-align: left;
     min-width: 120px;
     display: inline-block;
-    color: #6d0101;
+    color: #7d3607;
 }
+
+.button {
+    display: block; 
+    width: fit-content; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 10px 25px; 
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(238, 70, 171);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color:  #e87aad;
+  }
