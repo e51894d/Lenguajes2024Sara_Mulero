@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Formas Interactivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio de Formas Interactivas</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="bigSquare">
+                <svg id="smallSquare" class="draggable" width="50" height="50" viewBox="0 0 50 50">
+                    <rect width="50" height="50" fill="white" stroke="#333" stroke-width="1"/>
+                </svg>
+                <svg id="smallCircle" class="draggable" width="50" height="50" viewBox="0 0 50 50">
+                    <circle cx="25" cy="25" r="25" fill="white" stroke="#333" stroke-width="1"/>
+                </svg>
+                <svg id="smallTriangle" class="draggable" width="50" height="50" viewBox="0 0 50 50">
+                    <polygon points="25,0 50,50 0,50" fill="white" stroke="#333" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="counter-container">
+                <table id="shapeCounter">
+                    <thead>
+                        <tr>
+                            <th>Forma</th>
+                            <th>Color</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cuadrados</td>
+                            <td id="squareColor">Blanco</td>
+                            <td id="squareCount">0</td>
+                        </tr>
+                        <tr>
+                            <td>Círculos</td>
+                            <td id="circleColor">Blanco</td>
+                            <td id="circleCount">0</td>
+                        </tr>
+                        <tr>
+                            <td>Triángulos</td>
+                            <td id="triangleColor">Blanco</td>
+                            <td id="triangleCount">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sara M.H.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
